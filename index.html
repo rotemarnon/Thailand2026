@@ -16,69 +16,46 @@ display: flex; padding: 0 8px;
 position: sticky; top: 0; z-index: 20;
 }
 .day-btn {
-flex-shrink: 0; padding: 10px 14px; font-size: 12px; color: #888;
+flex-shrink: 0; padding: 10px 12px; font-size: 11px; color: #888;
 background: none; border: none; border-bottom: 2px solid transparent;
 cursor: pointer; text-align: center; line-height: 1.3;
 }
-.day-btn .day-num { font-size: 16px; font-weight: 600; display: block; color: #1a1a1a; }
+.day-btn .day-num { font-size: 15px; font-weight: 600; display: block; color: #1a1a1a; }
 .day-btn.active { color: #1a6ef5; border-bottom-color: #1a6ef5; }
 .day-btn.active .day-num { color: #1a6ef5; }
 
 .header { background: #fff; padding: 16px 16px 12px; border-bottom: 1px solid #e8e8e4; }
 .trip-label { font-size: 11px; color: #999; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
-.day-title { font-size: 21px; font-weight: 600; color: #1a1a1a; margin-bottom: 2px; }
+.day-title { font-size: 20px; font-weight: 600; color: #1a1a1a; margin-bottom: 2px; }
 .day-sub { font-size: 13px; color: #666; margin-bottom: 8px; }
-
 .tags-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
-.tag {
-display: inline-flex; align-items: center; gap: 4px;
-border-radius: 20px; font-size: 11px; padding: 3px 10px;
-text-decoration: none; cursor: pointer;
-}
+.tag { display: inline-flex; align-items: center; gap: 4px; border-radius: 20px; font-size: 11px; padding: 3px 10px; text-decoration: none; cursor: pointer; }
 .tag-weather-warn { background: #fff8e6; color: #a06000; border: 1px solid #f0d080; }
-.tag-hotel { background: #f0f0ea; color: #555; border: 1px solid #e0e0d8; }
+.tag-weather-ok { background: #e8faf0; color: #166534; border: 1px solid #a7f3c0; }
 .tag-711 { background: #e8f0fe; color: #1a4fa0; border: 1px solid #c5d5f8; font-weight: 500; }
 
 .nav-tabs {
 display: flex; background: #fff; border-bottom: 1px solid #e8e8e4;
 overflow-x: auto; -webkit-overflow-scrolling: touch;
 }
-.tab {
-padding: 10px 16px; font-size: 13px; color: #888; cursor: pointer;
-border: none; background: none; border-bottom: 2px solid transparent;
-white-space: nowrap; flex-shrink: 0;
-}
+.tab { padding: 10px 14px; font-size: 13px; color: #888; cursor: pointer; border: none; background: none; border-bottom: 2px solid transparent; white-space: nowrap; flex-shrink: 0; }
 .tab.active { color: #1a6ef5; border-bottom-color: #1a6ef5; font-weight: 500; }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
-
 .content { padding: 16px; max-width: 600px; margin: 0 auto; }
 
-.section-label {
-font-size: 10px; font-weight: 600; color: #aaa;
-text-transform: uppercase; letter-spacing: 0.1em;
-margin-bottom: 10px; margin-top: 20px;
-}
+.section-label { font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; margin-top: 20px; }
 .section-label:first-child { margin-top: 0; }
 
 .timeline-item { display: flex; gap: 12px; margin-bottom: 16px; position: relative; }
-.timeline-item:not(:last-child)::before {
-content: ‘’; position: absolute; right: 19px; top: 40px; bottom: -8px;
-width: 1px; background: #e8e8e4;
-}
-.time-icon {
-width: 40px; height: 40px; border-radius: 50%;
-display: flex; align-items: center; justify-content: center;
-flex-shrink: 0; font-size: 18px;
-}
+.timeline-item:not(:last-child)::before { content: ‘’; position: absolute; right: 19px; top: 40px; bottom: -8px; width: 1px; background: #e8e8e4; }
+.time-icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
 .timeline-body { flex: 1; padding-top: 6px; }
 .timeline-time { font-size: 11px; color: #aaa; font-weight: 500; margin-bottom: 2px; }
 .timeline-title { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
 .timeline-desc { font-size: 13px; color: #555; line-height: 1.5; }
-.tip-box {
-border-radius: 8px; padding: 7px 10px; font-size: 12px;
-margin-top: 6px; line-height: 1.4;
-}
+
+.tip-box { border-radius: 8px; padding: 7px 10px; font-size: 12px; margin-top: 6px; line-height: 1.4; }
 .tip-blue { background: #e8f0fe; border: 1px solid #c5d5f8; color: #1a4fa0; }
 .tip-green { background: #e8faf0; border: 1px solid #a7f3c0; color: #166534; }
 .tip-warn { background: #fff8e6; border: 1px solid #f0d080; color: #a06000; }
@@ -86,24 +63,20 @@ margin-top: 6px; line-height: 1.4;
 .card { background: #fff; border: 1px solid #e8e8e4; border-radius: 12px; padding: 14px; margin-bottom: 10px; }
 .card-title { font-size: 14px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
 .card-sub { font-size: 12px; color: #888; margin-bottom: 4px; }
-.card-body { font-size: 13px; color: #555; line-height: 1.5; }
-.card-contact { font-size: 11px; color: #aaa; margin-top: 6px; font-family: monospace; }
-
-.pill-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
-.pill { font-size: 11px; background: #f5f5f0; border: 1px solid #e0e0d8; border-radius: 10px; padding: 2px 8px; color: #666; }
+.card-body { font-size: 13px; color: #555; line-height: 1.6; }
 
 .link-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.link-btn {
-display: inline-flex; align-items: center; gap: 4px;
-font-size: 11px; padding: 4px 10px; border-radius: 8px;
-text-decoration: none; font-weight: 500;
-}
+.link-btn { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; padding: 4px 10px; border-radius: 8px; text-decoration: none; font-weight: 500; }
 .link-maps { background: #e8f0fe; color: #1a4fa0; border: 1px solid #c5d5f8; }
 .link-web { background: #e8faf0; color: #166534; border: 1px solid #a7f3c0; }
 .link-phone { background: #f5f5f0; color: #555; border: 1px solid #e0e0d8; }
+.link-voucher { background: #fdf4ff; color: #7e22ce; border: 1px solid #e9d5ff; }
 
+.pill-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.pill { font-size: 11px; background: #f5f5f0; border: 1px solid #e0e0d8; border-radius: 10px; padding: 2px 8px; color: #666; }
 .badge { font-size: 10px; padding: 2px 7px; border-radius: 8px; font-weight: 600; }
 .badge-warn { background: #fff3cd; color: #856404; }
+.badge-alert { background: #fee2e2; color: #991b1b; }
 
 .food-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
 .food-card { background: #fff; border: 1px solid #e8e8e4; border-radius: 10px; padding: 11px 12px; }
@@ -111,37 +84,32 @@ text-decoration: none; font-weight: 500;
 .food-name { font-size: 14px; font-weight: 600; color: #1a1a1a; }
 .food-loc { font-size: 12px; color: #888; }
 
-.check-item {
-display: flex; align-items: center; gap: 10px;
-font-size: 13px; color: #444; padding: 8px 0;
-border-top: 1px solid #f0f0ec; cursor: pointer;
-}
+.check-item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #444; padding: 8px 0; border-top: 1px solid #f0f0ec; cursor: pointer; }
 .check-item:first-child { border-top: none; }
-.check-box {
-width: 20px; height: 20px; border-radius: 50%;
-border: 1.5px solid #ddd; flex-shrink: 0;
-display: flex; align-items: center; justify-content: center;
-}
+.check-box { width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid #ddd; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .check-item.done .check-box { background: #22c55e; border-color: #22c55e; }
 .check-item.done .check-box::after { content: ‘✓’; font-size: 11px; color: #fff; font-weight: 700; }
 .check-item.done span { text-decoration: line-through; color: #aaa; }
 
-.seven-section { margin-top: 20px; }
-.seven-title { font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
-.seven-item {
-display: flex; align-items: center; justify-content: space-between;
-background: #fff; border: 1px solid #e8e8e4; border-radius: 10px;
-padding: 10px 12px; margin-bottom: 6px;
-}
+.seven-item { display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #e8e8e4; border-radius: 10px; padding: 10px 12px; margin-bottom: 6px; }
 .seven-info { flex: 1; }
 .seven-name { font-size: 13px; font-weight: 600; color: #1a1a1a; }
 .seven-addr { font-size: 11px; color: #888; margin-top: 2px; }
-.seven-rating { font-size: 11px; color: #f59e0b; margin-top: 2px; }
-.seven-link {
-font-size: 11px; padding: 5px 10px; border-radius: 8px;
-background: #e8f0fe; color: #1a4fa0; border: 1px solid #c5d5f8;
-text-decoration: none; white-space: nowrap; margin-right: 6px;
-}
+.seven-rating { font-size: 11px; color: #888; margin-top: 2px; }
+.seven-link { font-size: 11px; padding: 5px 10px; border-radius: 8px; background: #e8f0fe; color: #1a4fa0; border: 1px solid #c5d5f8; text-decoration: none; white-space: nowrap; margin-right: 6px; }
+
+/* Modal */
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; align-items: flex-end; justify-content: center; }
+.modal-overlay.open { display: flex; }
+.modal { background: #fff; border-radius: 16px 16px 0 0; width: 100%; max-height: 80vh; overflow-y: auto; padding: 20px 16px 32px; }
+.modal-handle { width: 36px; height: 4px; background: #ddd; border-radius: 2px; margin: 0 auto 16px; }
+.modal-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.modal-subtitle { font-size: 12px; color: #888; margin-bottom: 16px; }
+.modal-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0ec; font-size: 13px; }
+.modal-row:last-of-type { border-bottom: none; }
+.modal-label { color: #888; flex-shrink: 0; margin-left: 12px; }
+.modal-value { color: #1a1a1a; font-weight: 500; text-align: left; }
+.modal-close { width: 100%; margin-top: 16px; padding: 12px; background: #f5f5f0; border: none; border-radius: 10px; font-size: 14px; color: #555; cursor: pointer; }
 
 .day-page { display: none; }
 .day-page.active { display: block; }
@@ -150,9 +118,152 @@ text-decoration: none; white-space: nowrap; margin-right: 6px;
 </head>
 <body>
 
+<!-- Modals -->
+
+<div id="modal-saii" class="modal-overlay" onclick="closeModal('saii')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">SAii Laguna Phuket</div>
+    <div class="modal-subtitle">ווצ'ר 83812</div>
+    <div class="modal-row"><span class="modal-label">תאריכים</span><span class="modal-value">5/7 → 10/7 (5 לילות)</span></div>
+    <div class="modal-row"><span class="modal-label">חדרים</span><span class="modal-value">4 × Lagoon View Room + ABF</span></div>
+    <div class="modal-row"><span class="modal-label">סידור</span><span class="modal-value">King+Twin (רותם+דגנית+גילעדו) × 2<br>King+Twin (מנורים × 2 + ילדים)</span></div>
+    <div class="modal-row"><span class="modal-label">Confirmation</span><span class="modal-value">842747353</span></div>
+    <div class="modal-row"><span class="modal-label">בקשה</span><span class="modal-value">חדרים צמודים (Strong Request)</span></div>
+    <div class="modal-row"><span class="modal-label">טלפון</span><span class="modal-value">076 360 600</span></div>
+    <div class="modal-row"><span class="modal-label">כתובת</span><span class="modal-value">323 Moo 2, Srisoonthorn Rd, Bangtao Beach</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+      <a href="https://maps.google.com/?q=SAii+Laguna+Phuket+Bangtao" class="link-btn link-maps">📍 Maps</a>
+      <a href="tel:+6676360600" class="link-btn link-phone">📞 התקשר</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('saii')">סגור</button>
+  </div>
+</div>
+
+<div id="modal-anantara" class="modal-overlay" onclick="closeModal('anantara')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Anantara Koh Yao Yai Resort</div>
+    <div class="modal-subtitle">ווצ'ר 83813</div>
+    <div class="modal-row"><span class="modal-label">תאריכים</span><span class="modal-value">10/7 → 13/7 (3 לילות)</span></div>
+    <div class="modal-row"><span class="modal-label">חדרים</span><span class="modal-value">2 × Deluxe Sea View Suite + ABF<br>1 × Grand Family Sea View Suite + ABF<br>+ 2 Extra Beds</span></div>
+    <div class="modal-row"><span class="modal-label">Confirmation</span><span class="modal-value">5793158 / 5793159 / 5793160</span></div>
+    <div class="modal-row"><span class="modal-label">בקשה</span><span class="modal-value">חדרים צמודים (Strong Request)</span></div>
+    <div class="modal-row"><span class="modal-label">טלפון</span><span class="modal-value">076 675 888 / +66 763 36188</span></div>
+    <div class="modal-row"><span class="modal-label">כתובת</span><span class="modal-value">Koh Yao Yai, Phang Nga</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="https://www.anantara.com/en/koh-yao-yai" target="_blank" class="link-btn link-web">🌐 אתר</a>
+      <a href="https://maps.google.com/?q=Anantara+Koh+Yao+Yai+Resort" class="link-btn link-maps">📍 Maps</a>
+      <a href="tel:+6676675888" class="link-btn link-phone">📞 התקשר</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('anantara')">סגור</button>
+  </div>
+</div>
+
+<div id="modal-avani" class="modal-overlay" onclick="closeModal('avani')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Avani Plus Khao Lak Resort</div>
+    <div class="modal-subtitle">ווצ'ר 83815</div>
+    <div class="modal-row"><span class="modal-label">תאריכים</span><span class="modal-value">13/7 → 18/7 (5 לילות)</span></div>
+    <div class="modal-row"><span class="modal-label">חדרים</span><span class="modal-value">2 × Two Bedroom Family Suite + ABF<br>+ Child Share + Child Extra Bed</span></div>
+    <div class="modal-row"><span class="modal-label">Confirmation</span><span class="modal-value">842718965 / 842718451</span></div>
+    <div class="modal-row"><span class="modal-label">בקשה</span><span class="modal-value">חדרים צמודים (Strong Request)</span></div>
+    <div class="modal-row"><span class="modal-label">טלפון</span><span class="modal-value">076 427 300</span></div>
+    <div class="modal-row"><span class="modal-label">כתובת</span><span class="modal-value">99 Moo 8, Bang-Muang, Takua-Pa, Phang Nga</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="https://www.avanihotels.com/en/plus-khao-lak" target="_blank" class="link-btn link-web">🌐 אתר</a>
+      <a href="https://maps.google.com/?q=Avani+Plus+Khao+Lak+Resort+Phang+Nga" class="link-btn link-maps">📍 Maps</a>
+      <a href="tel:+6676427300" class="link-btn link-phone">📞 התקשר</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('avani')">סגור</button>
+  </div>
+</div>
+
+<div id="modal-snug" class="modal-overlay" onclick="closeModal('snug')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">The Snug & The Sierra Airportel</div>
+    <div class="modal-subtitle">לינת מעבר ליד שדה התעופה</div>
+    <div class="modal-row"><span class="modal-label">תאריכים</span><span class="modal-value">4/7 (לילה) → 5/7 עד 11:00</span></div>
+    <div class="modal-row"><span class="modal-label">חדרים</span><span class="modal-value">2 חדרים · ארוחת בוקר כלולה</span></div>
+    <div class="modal-row"><span class="modal-label">Confirmation</span><span class="modal-value">5297.820.517</span></div>
+    <div class="modal-row"><span class="modal-label">PIN</span><span class="modal-value">8140</span></div>
+    <div class="modal-row"><span class="modal-label">הגעה צפויה</span><span class="modal-value">00:00–01:00 (אחרי נחיתה 23:40)</span></div>
+    <div class="modal-row"><span class="modal-label">טלפון</span><span class="modal-value">+66 93 159 2462</span></div>
+    <div class="modal-row"><span class="modal-label">כתובת</span><span class="modal-value">22/3 Moo.1 Soi Nai Yang 16/1, Nai Yang Beach</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="https://maps.google.com/?q=The+Snug+Airportel+Nai+Yang+Phuket" class="link-btn link-maps">📍 Maps</a>
+      <a href="tel:+66931592462" class="link-btn link-phone">📞 התקשר</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('snug')">סגור</button>
+  </div>
+</div>
+
+<div id="modal-van1" class="modal-overlay" onclick="closeModal('van1')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">ואן: Snug Airportel → SAii Laguna</div>
+    <div class="modal-subtitle">ווצ'ר 84001 · Moon Holidays</div>
+    <div class="modal-row"><span class="modal-label">תאריך</span><span class="modal-value">5 יולי 2026</span></div>
+    <div class="modal-row"><span class="modal-label">איסוף</span><span class="modal-value">11:00 · Gate 2 Outside · Snug Airportel</span></div>
+    <div class="modal-row"><span class="modal-label">שם להזדהות</span><span class="modal-value">Ran Manor</span></div>
+    <div class="modal-row"><span class="modal-label">טיסה</span><span class="modal-value">TR658 · נחיתה 08:40</span></div>
+    <div class="modal-row"><span class="modal-label">רכב</span><span class="modal-value">Van · 6 נוסעים</span></div>
+    <div class="modal-row"><span class="modal-label">Moon Holidays</span><span class="modal-value">02-1266589 · 082-6914452</span></div>
+    <div class="modal-row"><span class="modal-label">WhatsApp</span><span class="modal-value">+66889841165</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="tel:+6621266589" class="link-btn link-phone">📞 Moon Holidays</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('van1')">סגור</button>
+  </div>
+</div>
+
+<div id="modal-speedboat1" class="modal-overlay" onclick="closeModal('speedboat1')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">ספידבוט: Laeam Saii Pier → Anantara</div>
+    <div class="modal-subtitle">ווצ'ר 83813 · 10 יולי</div>
+    <div class="modal-row"><span class="modal-label">תאריך</span><span class="modal-value">10 יולי 2026</span></div>
+    <div class="modal-row"><span class="modal-label">יציאה</span><span class="modal-value">13:00 · Laeam Saii Pier</span></div>
+    <div class="modal-row"><span class="modal-label">יעד</span><span class="modal-value">Anantara Koh Yao Yai Resort</span></div>
+    <div class="modal-row"><span class="modal-label">Moon Holidays</span><span class="modal-value">02-1266589 · 082-6914452</span></div>
+    <div class="modal-row"><span class="modal-label">חזרה</span><span class="modal-value">13 יולי · 14:00 → Thalane Pier</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="https://maps.google.com/?q=Laeam+Saii+Pier+Phuket" class="link-btn link-maps">📍 Laeam Saii Pier</a>
+      <a href="tel:+6621266589" class="link-btn link-phone">📞 Moon Holidays</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('speedboat1')">סגור</button>
+  </div>
+</div>
+
+<div id="modal-speedboat2" class="modal-overlay" onclick="closeModal('speedboat2')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-handle"></div>
+    <div class="modal-title">ספידבוט: Anantara → Thalane Pier</div>
+    <div class="modal-subtitle">ווצ'ר 83813 · 13 יולי</div>
+    <div class="modal-row"><span class="modal-label">תאריך</span><span class="modal-value">13 יולי 2026</span></div>
+    <div class="modal-row"><span class="modal-label">יציאה</span><span class="modal-value">14:00 · Anantara Koh Yao Yai</span></div>
+    <div class="modal-row"><span class="modal-label">יעד</span><span class="modal-value">Thalane Pier</span></div>
+    <div class="modal-row"><span class="modal-label">אחרי הנחיתה</span><span class="modal-value">מונית Bolt/Grab → Avani Plus Khao Lak (~1 שעה)</span></div>
+    <div class="modal-row"><span class="modal-label">Moon Holidays</span><span class="modal-value">02-1266589 · 082-6914452</span></div>
+    <div class="link-row" style="margin-top:12px">
+      <a href="https://maps.google.com/?q=Thalane+Pier+Krabi+Thailand" class="link-btn link-maps">📍 Thalane Pier</a>
+      <a href="tel:+6621266589" class="link-btn link-phone">📞 Moon Holidays</a>
+    </div>
+    <button class="modal-close" onclick="closeModal('speedboat2')">סגור</button>
+  </div>
+</div>
+
+<!-- Day Nav -->
+
 <div class="day-nav">
-  <button class="day-btn active" onclick="showDay(1,this)"><span class="day-num">1</span>ראשון 5/7</button>
-  <button class="day-btn" onclick="showDay(2,this)"><span class="day-num">2</span>שני 6/7</button>
+  <button class="day-btn active" onclick="showDay(1,this)"><span class="day-num">1</span>5/7 ראשון</button>
+  <button class="day-btn" onclick="showDay(2,this)"><span class="day-num">2</span>6/7 שני</button>
+  <button class="day-btn" onclick="showDay(3,this)"><span class="day-num">3</span>7/7 שלישי</button>
+  <button class="day-btn" onclick="showDay(4,this)"><span class="day-num">4</span>8/7 רביעי</button>
+  <button class="day-btn" onclick="showDay(5,this)"><span class="day-num">5</span>9/7 חמישי</button>
 </div>
 
 <!-- ======= יום 1 ======= -->
@@ -164,7 +275,7 @@ text-decoration: none; white-space: nowrap; margin-right: 6px;
     <div class="day-sub">יום הגעה · הכנסה לאווירה · מנוחה</div>
     <div class="tags-row">
       <span class="tag tag-weather-warn">☁️ גשם קצר אפשרי אחה"צ</span>
-      <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Laguna+Phuket&query_place_id=ChIJ37lUYNc5UDARz7cqENEYRMc" target="_blank" class="tag tag-711">🏪 7-Eleven הקרוב · Laguna</a>
+      <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="tag tag-711">🏪 7-Eleven הקרוב</a>
     </div>
   </div>
   <div class="nav-tabs">
@@ -173,217 +284,240 @@ text-decoration: none; white-space: nowrap; margin-right: 6px;
     <button class="tab" onclick="showTab('1-logistics',this)">לוגיסטיקה</button>
     <button class="tab" onclick="showTab('1-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('1-711',this)">🏪 7-Eleven</button>
+    <button class="tab" onclick="showTab('1-optional',this)">💡 אופציונלי</button>
   </div>
   <div class="content">
-
-```
-<div id="tab-1-schedule" class="tab-panel active">
-  <div class="section-label">לוז מוצע</div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#f0eaff">🌙</div>
-    <div class="timeline-body">
-      <div class="timeline-time">לילה 4/7 → בוקר 5/7</div>
-      <div class="timeline-title">לינה · The Snug Airportel</div>
-      <div class="timeline-desc">נחיתה 23:40. הגעה לאכסניה ~00:30. שני חדרים — רותם+גילעדו, יוש. ארוחת בוקר כלולה.</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8faf0">☕</div>
-    <div class="timeline-body">
-      <div class="timeline-time">08:00–10:30</div>
-      <div class="timeline-title">ארוחת בוקר + איסוף חפצים</div>
-      <div class="timeline-desc">ארוחת בוקר כלולה. ואן מגיע ב-11:00 — אין מה למהר.</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8f0fe">🚐</div>
-    <div class="timeline-body">
-      <div class="timeline-time">11:00</div>
-      <div class="timeline-title">איסוף ואן · Snug → SAii Laguna</div>
-      <div class="timeline-desc">מחוץ לכניסה — הנהג מחכה עם שלט. נסיעה ~45 דקות לחוף Bangtao.</div>
-      <div class="tip-box tip-blue">📋 ווצ'ר 84009 · שם: Ran Manor · איסוף 11:00</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#fff8e6">🏨</div>
-    <div class="timeline-body">
-      <div class="timeline-time">~12:00</div>
-      <div class="timeline-title">הגעה ל-SAii Laguna Phuket</div>
-      <div class="timeline-desc">צ'ק-אין רשמי מ-14:00. בינתיים הבריכה פתוחה מיד.</div>
-      <div class="tip-box tip-blue">📌 לבקש חדרים צמודים · 4 חדרי Lagoon View + ABF</div>
-      <div class="link-row">
-        <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר המלון</a>
-        <a href="https://maps.google.com/?q=SAii+Laguna+Phuket" target="_blank" class="link-btn link-maps">📍 Google Maps</a>
+    <div id="tab-1-schedule" class="tab-panel active">
+      <div class="section-label">לוז מוצע</div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#f0eaff">🌙</div>
+        <div class="timeline-body">
+          <div class="timeline-time">לילה 4/7 → בוקר 5/7</div>
+          <div class="timeline-title">לינה · The Snug Airportel</div>
+          <div class="timeline-desc">נחיתה 23:40. הגעה לאכסניה ~00:30. שני חדרים — רותם+גילעדו, יוש. ארוחת בוקר כלולה.</div>
+          <div class="link-row"><button onclick="openModal('snug')" class="link-btn link-voucher">📋 פרטי הזמנה</button></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">☕</div>
+        <div class="timeline-body">
+          <div class="timeline-time">08:00–10:30</div>
+          <div class="timeline-title">ארוחת בוקר + איסוף חפצים</div>
+          <div class="timeline-desc">ארוחת בוקר כלולה. ואן מגיע ב-11:00 — אין מה למהר.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚐</div>
+        <div class="timeline-body">
+          <div class="timeline-time">11:00</div>
+          <div class="timeline-title">איסוף ואן · Snug → SAii Laguna</div>
+          <div class="timeline-desc">מחוץ לכניסה — הנהג מחכה. נסיעה ~45 דקות לחוף Bangtao.</div>
+          <div class="link-row"><button onclick="openModal('van1')" class="link-btn link-voucher">📋 פרטי הזמנה</button></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fff8e6">🏨</div>
+        <div class="timeline-body">
+          <div class="timeline-time">~12:00</div>
+          <div class="timeline-title">הגעה ל-SAii Laguna Phuket</div>
+          <div class="timeline-desc">צ'ק-אין רשמי מ-14:00. בינתיים הבריכה פתוחה מיד.</div>
+          <div class="link-row">
+            <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+            <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+            <a href="https://maps.google.com/?q=SAii+Laguna+Phuket+Bangtao" class="link-btn link-maps">📍 Maps</a>
+          </div>
+          <div style="background:#fff8e6;border:1px solid #f0d080;border-radius:10px;padding:10px 12px;margin-top:8px">
+            <div style="font-size:11px;font-weight:600;color:#a06000;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">✅ לסדר בצ'ק-אין עם הפרונט</div>
+            <div class="check-item" onclick="toggle(this)" style="border-top:none;padding:5px 0"><div class="check-box"></div><span>לבקש חדרים צמודים — Strong Request</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לשריין ג'ט סקי ליום 3 (7/7) דרך Laguna Beach Sports Centre</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לשריין עיסוי ב-SAii Spa ליום 3 (7/7) — רותם ודגנית</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לברר שעות ומחירי ג'ט סקי + גיל מינימלי לנהיגה</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לברר אפשרות late check-out ב-10/7 (יום ספידבוט 13:00)</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לשאול על שאטל למרכז הספורט Laguna Beach</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🏊</div>
+        <div class="timeline-body">
+          <div class="timeline-time">12:00–17:00</div>
+          <div class="timeline-title">בריכה · לגונה · מנוחה</div>
+          <div class="timeline-desc">המלון הוא האטרקציה היום. ילדים בבריכה, מבוגרים נושמים. אין תוכנית — זה הפואנטה.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🍜</div>
+        <div class="timeline-body">
+          <div class="timeline-time">19:00–21:00</div>
+          <div class="timeline-title">ארוחת ערב · Boat Avenue</div>
+          <div class="timeline-desc">5 דקות מהמלון. שוק אוכל תאילנדי — אווירה קלילה. ארוחה ראשונה לכולם ביחד.</div>
+          <div class="tip-box tip-green">⭐ חובה לנסות: Pad Thai · Tom Yum Goong · Pad Kra Pao</div>
+          <div class="link-row"><a href="https://maps.google.com/?q=Boat+Avenue+Phuket+Cherngtalay" class="link-btn link-maps">📍 Maps · ⭐ 4.9</a></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#f5f5f0">🌙</div>
+        <div class="timeline-body">
+          <div class="timeline-time">21:00+</div>
+          <div class="timeline-title">חזרה למלון · שינה מוקדמת</div>
+          <div class="timeline-desc">הגוף עדיין בזמן ישראל. שינה מוקדמת = יום מחר טוב יותר.</div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8f0fe">🏊</div>
-    <div class="timeline-body">
-      <div class="timeline-time">12:00–17:00</div>
-      <div class="timeline-title">בריכה · לגונה · מנוחה</div>
-      <div class="timeline-desc">המלון הוא האטרקציה היום. ילדים בבריכה, מבוגרים נושמים. אין תוכנית — זה הפואנטה.</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8faf0">🍜</div>
-    <div class="timeline-body">
-      <div class="timeline-time">19:00–21:00</div>
-      <div class="timeline-title">ארוחת ערב · Boat Avenue</div>
-      <div class="timeline-desc">5 דקות מהמלון. מרכז מסעדות ושוק אוכל — אווירה תאילנדית קלילה. ארוחה ראשונה לכולם ביחד.</div>
-      <div class="tip-box tip-green">⭐ חובה לנסות: Pad Thai · Tom Yum Goong · Pad Kra Pao</div>
-      <div class="link-row">
-        <a href="https://www.google.com/maps/search/?api=1&query=Boat+Avenue+Phuket&query_place_id=ChIJNeY1txg5UDARGP7tQ3s000s" target="_blank" class="link-btn link-maps">📍 Maps · ⭐ 4.9</a>
+    <div id="tab-1-food" class="tab-panel">
+      <div class="section-label">אוכל היום</div>
+      <div class="food-grid">
+        <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">Snug Airportel</div><div class="food-loc">כלול בחדר</div></div>
+        <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">SAii Laguna</div><div class="food-loc">סנאק קל בבריכה</div></div>
+      </div>
+      <div class="card">
+        <div class="food-meal">ערב</div>
+        <div class="card-title" style="margin-top:4px">Boat Avenue</div>
+        <div class="card-sub">~5 דקות מהמלון · Cherngtalay · פתוח 11:00–00:00</div>
+        <div class="card-body" style="margin-top:6px">מרכז מסעדות ואוכל רחוב — אחד המומלצים בצפון פוקט. אווירה תאילנדית אמיתית, מושלם לארוחה ראשונה של הטיול.</div>
+        <div class="pill-row">
+          <span class="pill">Pad Thai</span><span class="pill">Tom Yum Goong</span><span class="pill">Pad Kra Pao</span><span class="pill">Massaman Curry</span><span class="pill">Mango Sticky Rice</span>
+        </div>
+        <div class="link-row"><a href="https://maps.google.com/?q=Boat+Avenue+Phuket+Cherngtalay" class="link-btn link-maps">📍 Maps · ⭐ 4.9</a></div>
       </div>
     </div>
+    <div id="tab-1-logistics" class="tab-panel">
+      <div class="section-label">לינת הלילה</div>
+      <div class="card">
+        <div class="card-title">The Snug & The Sierra Airportel</div>
+        <div class="card-body">לילה אחד · 4/7 → 5/7 · צ'ק-אאוט עד 11:00 · Nai Yang Beach</div>
+        <div class="link-row">
+          <button onclick="openModal('snug')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="https://maps.google.com/?q=The+Snug+Airportel+Nai+Yang+Phuket" class="link-btn link-maps">📍 Maps</a>
+          <a href="tel:+66931592462" class="link-btn link-phone">📞 התקשר</a>
+        </div>
+      </div>
+      <div class="section-label">המלון הבא</div>
+      <div class="card">
+        <div class="card-title">SAii Laguna Phuket</div>
+        <div class="card-body">5 לילות · 5/7 → 10/7 · 4 חדרי Lagoon View + ארוחת בוקר · Bangtao Beach</div>
+        <div class="link-row">
+          <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+          <a href="tel:+6676360600" class="link-btn link-phone">📞 התקשר</a>
+        </div>
+      </div>
+      <div class="section-label">העברה</div>
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+          <div class="card-title" style="margin:0">ואן: Snug → SAii Laguna</div>
+          <span class="badge badge-warn">היום 11:00</span>
+        </div>
+        <div class="card-body">ווצ'ר 84001 · שם: Ran Manor · Moon Holidays</div>
+        <div class="link-row">
+          <button onclick="openModal('van1')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="tel:+6621266589" class="link-btn link-phone">📞 Moon Holidays</a>
+        </div>
+      </div>
+    </div>
+    <div id="tab-1-tomorrow" class="tab-panel">
+      <div class="section-label">מחר — שני 6 יולי</div>
+      <div class="card">
+        <div class="card-title">🎢 Andamanda Water Park</div>
+        <div class="card-body">פארק המים הגדול של פוקט — 37 מגלשות, בריכת גלים, נהר עצלן. ~20 דקות מהמלון. יום שלם של כיף.</div>
+        <div class="link-row">
+          <a href="https://www.andamandaphuket.com/booking" target="_blank" class="link-btn link-web">🌐 כרטיסים</a>
+          <a href="https://maps.google.com/?q=Andamanda+Water+Park+Kathu+Phuket" class="link-btn link-maps">📍 Maps</a>
+        </div>
+      </div>
+      <div class="section-label">להכין הלילה</div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>בגדי ים לכולם + מגבות</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>קרם הגנה גבוה — חובה</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להזמין Bolt/Grab לבוקר (~200 באט)</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>כסף מזומן לאוכל בפארק</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לבדוק מזג אוויר בבוקר</span></div>
+      <div class="tip-box tip-warn" style="margin-top:12px">⚠️ להזמין כרטיסים מראש דרך אפליקציית Andamanda — 1,600 באט מבוגר (זול יותר מהקופה)</div>
+    </div>
+    <div id="tab-1-711" class="tab-panel">
+      <div class="section-label">7-Eleven קרוב למלון</div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Laguna entrance</div><div class="seven-addr">Choeng Thale — הכי קרוב לכניסת לגונה</div><div class="seven-rating">⭐ 3.6 · פתוח 24 שעות · ATM באתר</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Bangtao (חדש ונקי)</div><div class="seven-addr">Choeng Thale — ליד Sunwing Hotel</div><div class="seven-rating">⭐ 5.0 · פתוח 24 שעות</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Bangtao+Beach+Sunwing+Phuket" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Bangtao (גדול)</div><div class="seven-addr">Choeng Thale — מגוון רחב יותר</div><div class="seven-rating">⭐ 4.0 · פתוח 24 שעות · SIM cards</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Choeng+Thale+Bangtao+Phuket" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="tip-box tip-blue" style="margin-top:12px">💡 SIM card תאילנדי: 200 באט / 15 ימים. קרם הגנה, מים, קפה — הכל זול יותר מהמלון.</div>
+    </div>
   </div>
 
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#f5f5f0">🌙</div>
-    <div class="timeline-body">
-      <div class="timeline-time">21:00+</div>
-      <div class="timeline-title">חזרה למלון · שינה מוקדמת</div>
-      <div class="timeline-desc">הגוף עדיין בזמן ישראל. שינה מוקדמת = יום מחר טוב יותר.</div>
-    </div>
-  </div>
-</div>
+```
+<div id="tab-1-optional" class="tab-panel">
+  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
 
-<div id="tab-1-food" class="tab-panel">
-  <div class="section-label">אוכל היום</div>
-  <div class="food-grid">
-    <div class="food-card">
-      <div class="food-meal">בוקר</div>
-      <div class="food-name">Snug Airportel</div>
-      <div class="food-loc">כלול בחדר</div>
-    </div>
-    <div class="food-card">
-      <div class="food-meal">צהריים</div>
-      <div class="food-name">SAii Laguna</div>
-      <div class="food-loc">סנאק קל בבריכה</div>
-    </div>
-  </div>
   <div class="card">
-    <div class="food-meal">ערב</div>
-    <div class="card-title" style="margin-top:4px">Boat Avenue</div>
-    <div class="card-sub">~5 דקות מהמלון · Cherngtalay · פתוח 12:00–00:00</div>
-    <div class="card-body" style="margin-top:6px">מרכז מסעדות ואוכל רחוב — אחד המומלצים בצפון פוקט. אווירה תאילנדית אמיתית, מושלם לארוחה ראשונה של הטיול.</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
+        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
+      </div>
+      <span class="badge badge-warn">30 דקות</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
+        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">חצי יום</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
+        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">יום שלם</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
+        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
+      </div>
+      <span class="badge badge-warn">חצי-יום מלא</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
     <div class="pill-row">
-      <span class="pill">Pad Thai</span>
-      <span class="pill">Tom Yum Goong</span>
-      <span class="pill">Pad Kra Pao</span>
-      <span class="pill">Massaman Curry</span>
-      <span class="pill">Mango Sticky Rice</span>
+      <span class="pill">מתאים לכל הגילאים</span>
+      <span class="pill">ציוד כלול בדרך כלל</span>
+      <span class="pill">~1,200-1,800 באט לאיש</span>
     </div>
     <div class="link-row">
-      <a href="https://www.google.com/maps/search/?api=1&query=Boat+Avenue+Phuket&query_place_id=ChIJNeY1txg5UDARGP7tQ3s000s" target="_blank" class="link-btn link-maps">📍 Maps · ⭐ 4.9</a>
-      <a href="tel:+66954296150" class="link-btn link-phone">📞 +66 95 429 6150</a>
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
     </div>
-  </div>
-</div>
-
-<div id="tab-1-logistics" class="tab-panel">
-  <div class="section-label">לינת הלילה</div>
-  <div class="card">
-    <div class="card-title">The Snug & The Sierra Airportel</div>
-    <div class="card-body">לילה אחד · 4/7 → 5/7 · צ'ק-אאוט עד 11:00 · Nai Yang Beach</div>
-    <div class="pill-row">
-      <span class="pill">Confirmation: 5297.820.517</span>
-      <span class="pill">PIN: 8140</span>
-      <span class="pill">ארוחת בוקר כלולה</span>
-    </div>
-    <div class="link-row">
-      <a href="https://maps.google.com/?q=The+Snug+Airportel+Phuket" target="_blank" class="link-btn link-maps">📍 Maps</a>
-      <a href="tel:+66931592462" class="link-btn link-phone">📞 +66 93 159 2462</a>
-    </div>
-  </div>
-  <div class="section-label">המלון הבא</div>
-  <div class="card">
-    <div class="card-title">SAii Laguna Phuket</div>
-    <div class="card-body">5 לילות · 5/7 → 10/7 · 4 חדרי Lagoon View + ארוחת בוקר<br>Bangtao Beach, Cherngtalay</div>
-    <div class="pill-row">
-      <span class="pill">ווצ'ר 83812</span>
-      <span class="pill">Conf: 842747353</span>
-      <span class="pill">בקשה: חדרים צמודים</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
-      <a href="https://maps.google.com/?q=SAii+Laguna+Phuket" target="_blank" class="link-btn link-maps">📍 Maps</a>
-      <a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a>
-    </div>
-  </div>
-  <div class="section-label">העברה</div>
-  <div class="card">
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-      <div class="card-title" style="margin:0">ואן: Snug → SAii Laguna</div>
-      <span class="badge badge-warn">היום 11:00</span>
-    </div>
-    <div class="card-body">ווצ'ר 84009 · שם: Ran Manor · Moon Holidays</div>
-    <div class="link-row">
-      <a href="tel:+6621266589" class="link-btn link-phone">📞 02-1266589</a>
-    </div>
-  </div>
-</div>
-
-<div id="tab-1-tomorrow" class="tab-panel">
-  <div class="section-label">מחר — שני 6 יולי</div>
-  <div class="card">
-    <div class="card-title">🎢 Andamanda Water Park</div>
-    <div class="card-body">פארק המים הגדול של פוקט — 37 מגלשות, בריכת גלים, נהר עצלן. ~20 דקות מהמלון. יום שלם של כיף.</div>
-    <div class="link-row">
-      <a href="https://www.andamandaphuket.com" target="_blank" class="link-btn link-web">🌐 אתר לכרטיסים</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=Andamanda+Phuket&query_place_id=ChIJ_YjQ6uQxUDARHVetUBkoi9k" target="_blank" class="link-btn link-maps">📍 Maps · ⭐ 4.3</a>
-    </div>
-  </div>
-  <div class="section-label">להכין הלילה</div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>בגדי ים לכולם + מגבות</span></div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>קרם הגנה גבוה — חובה</span></div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להזמין Bolt/Grab לבוקר (~200 באט)</span></div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>כסף מזומן בבאט לאוכל בפארק</span></div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לבדוק מזג אוויר בבוקר</span></div>
-  <div class="tip-box tip-warn" style="margin-top:12px">⚠️ להזמין כרטיסים מראש דרך אפליקציית Andamanda — 1,600 באט מבוגר (זול יותר מהקופה)</div>
-</div>
-
-<div id="tab-1-711" class="tab-panel">
-  <div class="section-label">7-Eleven קרוב למלון</div>
-
-  <div class="seven-item">
-    <div class="seven-info">
-      <div class="seven-name">7-Eleven · Laguna entrance</div>
-      <div class="seven-addr">Choeng Thale, Thalang — הכי קרוב לכניסת לגונה</div>
-      <div class="seven-rating">⭐ 3.6 · פתוח 24 שעות · ATM באתר</div>
-    </div>
-    <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Laguna+Phuket&query_place_id=ChIJ37lUYNc5UDARz7cqENEYRMc" target="_blank" class="seven-link">📍 נווט</a>
   </div>
 
-  <div class="seven-item">
-    <div class="seven-info">
-      <div class="seven-name">7-Eleven · Bangtao</div>
-      <div class="seven-addr">Choeng Thale, Thalang — ליד Sunwing Hotel</div>
-      <div class="seven-rating">⭐ 5.0 · פתוח 24 שעות · סניף חדש ונקי</div>
-    </div>
-    <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Bangtao+Phuket&query_place_id=ChIJAYaoYgA5UDARbuDyLtCTZw8" target="_blank" class="seven-link">📍 נווט</a>
-  </div>
-
-  <div class="seven-item">
-    <div class="seven-info">
-      <div class="seven-name">7-Eleven · Bangtao (גדול)</div>
-      <div class="seven-addr">Choeng Thale — מגוון רחב יותר</div>
-      <div class="seven-rating">⭐ 4.0 · פתוח 24 שעות · SIM cards · קנייה</div>
-    </div>
-    <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Bangtao+large+Phuket&query_place_id=ChIJ1WAyVZU5UDARGSwPf4kW-rc" target="_blank" class="seven-link">📍 נווט</a>
-  </div>
-
-  <div class="tip-box tip-blue" style="margin-top:12px">💡 ב-7-Eleven: SIM card תאילנדי (200 באט / 15 ימים), קרם הגנה, מים, חטיפים, קפה. הכל זול יותר מהמלון.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
 </div>
 ```
 
-  </div>
 </div>
 
 <!-- ======= יום 2 ======= -->
@@ -395,7 +529,7 @@ text-decoration: none; white-space: nowrap; margin-right: 6px;
     <div class="day-sub">Andamanda Water Park · יום כיף לכולם</div>
     <div class="tags-row">
       <span class="tag tag-weather-warn">☁️ גשם קצר אפשרי — פארק מים עובד גם בגשם</span>
-      <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Laguna+Phuket&query_place_id=ChIJ37lUYNc5UDARz7cqENEYRMc" target="_blank" class="tag tag-711">🏪 7-Eleven הקרוב</a>
+      <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="tag tag-711">🏪 7-Eleven הקרוב</a>
     </div>
   </div>
   <div class="nav-tabs">
@@ -404,173 +538,847 @@ text-decoration: none; white-space: nowrap; margin-right: 6px;
     <button class="tab" onclick="showTab('2-logistics',this)">לוגיסטיקה</button>
     <button class="tab" onclick="showTab('2-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('2-711',this)">🏪 7-Eleven</button>
+    <button class="tab" onclick="showTab('2-optional',this)">💡 אופציונלי</button>
   </div>
   <div class="content">
-
-```
-<div id="tab-2-schedule" class="tab-panel active">
-  <div class="section-label">לוז מוצע</div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8faf0">☕</div>
-    <div class="timeline-body">
-      <div class="timeline-time">07:30–09:00</div>
-      <div class="timeline-title">ארוחת בוקר במלון</div>
-      <div class="timeline-desc">ארוחת בוקר כלולה ב-SAii Laguna. לאכול טוב — יום ארוך ועמוס מחכה.</div>
+    <div id="tab-2-schedule" class="tab-panel active">
+      <div class="section-label">לוז מוצע</div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">☕</div>
+        <div class="timeline-body">
+          <div class="timeline-time">07:30–09:00</div>
+          <div class="timeline-title">ארוחת בוקר במלון</div>
+          <div class="timeline-desc">כלול ב-SAii Laguna. לאכול טוב — יום ארוך מחכה.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚗</div>
+        <div class="timeline-body">
+          <div class="timeline-time">09:30</div>
+          <div class="timeline-title">יציאה לפארק · Bolt/Grab</div>
+          <div class="timeline-desc">~20 דקות נסיעה, ~200 באט. לעשר אנשים — 2-3 מוניות במקביל.</div>
+          <div class="link-row"><a href="https://maps.google.com/?q=Andamanda+Water+Park+Kathu+Phuket" class="link-btn link-maps">📍 Andamanda Maps</a></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fef3c7">🎢</div>
+        <div class="timeline-body">
+          <div class="timeline-time">10:00–13:00</div>
+          <div class="timeline-title">פארק · סבב ראשון</div>
+          <div class="timeline-desc">מגלשות אתגריות לגדולים, אזור ילדים לקטנים, בריכת גלים לכולם.</div>
+          <div class="tip-box tip-green">💡 הכי שוות: Eagle Flyer · Racing Nagas · Rock N Raft · Angels' Slides</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🍽️</div>
+        <div class="timeline-body">
+          <div class="timeline-time">13:00–14:00</div>
+          <div class="timeline-title">צהריים בפארק</div>
+          <div class="timeline-desc">Tropical Beach (פירות ים), The Village (תאילנדי), Coral World (לילדים). ~300-400 באט לאיש.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fef3c7">🌊</div>
+        <div class="timeline-body">
+          <div class="timeline-time">14:00–17:00</div>
+          <div class="timeline-title">נהר עצלן + בריכת גלים</div>
+          <div class="timeline-desc">Lazy River — 550 מטר, הארוך באסיה. מושלם בשעות החמות. לשים לב לשעות בריכת הגלים.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚗</div>
+        <div class="timeline-body">
+          <div class="timeline-time">17:00–17:30</div>
+          <div class="timeline-title">חזרה למלון · Bolt/Grab</div>
+          <div class="timeline-desc">מקלחות, מנוחה קצרה לפני ערב.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🌅</div>
+        <div class="timeline-body">
+          <div class="timeline-time">19:30–21:30</div>
+          <div class="timeline-title">ארוחת ערב · Catch Beach Club</div>
+          <div class="timeline-desc">על חוף Bangtao, 5 דקות מהמלון. ⭐ 4.2 (2,122 ביקורות). ביץ' קלאב עם ים, אוכל טוב, אווירה מושלמת אחרי יום פארק.</div>
+          <div class="tip-box tip-warn">⚠️ הזמנה מראש חובה ל-10 אנשים</div>
+          <div class="link-row">
+            <a href="https://maps.google.com/?q=Catch+Beach+Club+Bangtao+Phuket" class="link-btn link-maps">📍 Maps · ⭐ 4.2</a>
+            <a href="https://www.catchbeachclub.com" target="_blank" class="link-btn link-web">🌐 הזמנה</a>
+            <a href="tel:+66653482017" class="link-btn link-phone">📞 התקשר</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tab-2-food" class="tab-panel">
+      <div class="section-label">אוכל היום</div>
+      <div class="food-grid">
+        <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">SAii Laguna</div><div class="food-loc">כלול · לאכול טוב</div></div>
+        <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">בפארק</div><div class="food-loc">Tropical Beach / The Village</div></div>
+      </div>
+      <div class="card">
+        <div class="food-meal">ערב</div>
+        <div class="card-title" style="margin-top:4px">Catch Beach Club</div>
+        <div class="card-sub">Bangtao Beach · 5 דקות מהמלון · פתוח 07:30–00:00</div>
+        <div class="card-body" style="margin-top:6px">ביץ' קלאב על הים עם אוכל ברמה גבוהה. פירות ים, מנות תאילנדיות, קוקטיילים. ⭐ 4.2 על 2,122 ביקורות.</div>
+        <div class="link-row">
+          <a href="https://maps.google.com/?q=Catch+Beach+Club+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a>
+          <a href="https://www.catchbeachclub.com" target="_blank" class="link-btn link-web">🌐 הזמנה</a>
+          <a href="tel:+66653482017" class="link-btn link-phone">📞 +66 65 348 2017</a>
+        </div>
+      </div>
+    </div>
+    <div id="tab-2-logistics" class="tab-panel">
+      <div class="section-label">Andamanda Water Park</div>
+      <div class="card">
+        <div class="card-title">פרטי הפארק</div>
+        <div class="card-body">333/3 Moo 1, Kathu · שעות: 10:00–19:00<br><br>מחירים (אפליקציה):<br>מבוגר / מעל 121 ס"מ: 1,600 באט<br>ילד 91–121 ס"מ: 1,100 באט<br>מתחת ל-91 ס"מ: חינם<br><br>10 × 1,600 = ~16,000 באט (~1,600 ₪)</div>
+        <div class="link-row">
+          <a href="https://www.andamandaphuket.com/booking" target="_blank" class="link-btn link-web">🌐 הזמנת כרטיסים</a>
+          <a href="https://maps.google.com/?q=Andamanda+Water+Park+Kathu+Phuket" class="link-btn link-maps">📍 Maps · ⭐ 4.3</a>
+          <a href="tel:+6676646777" class="link-btn link-phone">📞 התקשר</a>
+        </div>
+        <div class="tip-box tip-warn" style="margin-top:8px">⚠️ להוריד אפליקציית Andamanda ולהזמין מראש</div>
+      </div>
+    </div>
+    <div id="tab-2-tomorrow" class="tab-panel">
+      <div class="section-label">מחר — שלישי 7 יולי</div>
+      <div class="card">
+        <div class="card-title">☀️ יום מלון + ג'ט סקי</div>
+        <div class="card-body">יום רגוע — בריכה, חוף, עיסויים. ב-11:00 רותם והבנים יוצאים לג'ט סקי דרך Laguna Beach Sports Centre. אחה"צ חופשי לכולם. ערב ב-Bampot.</div>
+      </div>
+      <div class="section-label">להכין הלילה</div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לוודא שהג'ט סקי שוריין — אם לא, לפנות לפרונט עכשיו</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לוודא שהעיסוי שוריין ב-SAii Spa — רותם ודגנית</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>נעלי ספורט / בגדי ים לג'ט סקי</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לבדוק מזג אוויר בבוקר</span></div>
+    </div>
+    <div id="tab-2-711" class="tab-panel">
+      <div class="section-label">7-Eleven קרוב לפארק</div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Kathu</div><div class="seven-addr">61/30 Kathu — קרוב לפארק</div><div class="seven-rating">⭐ 2.5 · פתוח 24 שעות</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Kathu+Phuket+83120" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Ratsada</div><div class="seven-addr">152 Thanon Pracha-Uthit 1</div><div class="seven-rating">⭐ 4.9 · פתוח 24 שעות · המומלץ באזור</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Ratsada+Phuket" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="tip-box tip-blue" style="margin-top:12px">💡 לקנות מים ונשנושים לפני הכניסה לפארק — בפנים הכל יקר יותר.</div>
     </div>
   </div>
 
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8f0fe">🚗</div>
-    <div class="timeline-body">
-      <div class="timeline-time">09:30</div>
-      <div class="timeline-title">יציאה לפארק · Bolt/Grab</div>
-      <div class="timeline-desc">~20 דקות נסיעה, ~200 באט. לעשר אנשים — 2-3 מוניות במקביל.</div>
-      <div class="link-row">
-        <a href="https://www.google.com/maps/search/?api=1&query=Andamanda+Phuket&query_place_id=ChIJ_YjQ6uQxUDARHVetUBkoi9k" target="_blank" class="link-btn link-maps">📍 Andamanda Maps</a>
+```
+<div id="tab-2-optional" class="tab-panel">
+  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
+        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
+      </div>
+      <span class="badge badge-warn">30 דקות</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
+        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">חצי יום</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
+        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">יום שלם</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
+        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
+      </div>
+      <span class="badge badge-warn">חצי-יום מלא</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row">
+      <span class="pill">מתאים לכל הגילאים</span>
+      <span class="pill">ציוד כלול בדרך כלל</span>
+      <span class="pill">~1,200-1,800 באט לאיש</span>
+    </div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+</div>
+```
+
+</div>
+
+<!-- ======= יום 3 ======= -->
+
+<div id="day-3" class="day-page">
+  <div class="header">
+    <div class="trip-label">תאילנד 2026 · SAii Laguna Phuket</div>
+    <div class="day-title">יום 3 — שלישי, 7 יולי</div>
+    <div class="day-sub">יום מלון · חוף · עיסויים · מנוחה</div>
+    <div class="tags-row">
+      <span class="tag tag-weather-warn">☁️ עונת גשמים — יום מלון מושלם בכל מזג אוויר</span>
+      <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="tag tag-711">🏪 7-Eleven הקרוב</a>
+    </div>
+  </div>
+  <div class="nav-tabs">
+    <button class="tab active" onclick="showTab('3-schedule',this)">לוז היום</button>
+    <button class="tab" onclick="showTab('3-food',this)">אוכל</button>
+    <button class="tab" onclick="showTab('3-logistics',this)">לוגיסטיקה</button>
+    <button class="tab" onclick="showTab('3-tomorrow',this)">מחר</button>
+    <button class="tab" onclick="showTab('3-711',this)">🏪 7-Eleven</button>
+    <button class="tab" onclick="showTab('3-optional',this)">💡 אופציונלי</button>
+  </div>
+  <div class="content">
+    <div id="tab-3-schedule" class="tab-panel active">
+      <div class="section-label">לוז מוצע</div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">☕</div>
+        <div class="timeline-body">
+          <div class="timeline-time">08:00–09:30</div>
+          <div class="timeline-title">ארוחת בוקר מפנקת במלון</div>
+          <div class="timeline-desc">ארוחת בוקר כלולה. בלי מהירות — היום לא יוצאים לשום מקום.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🏊</div>
+        <div class="timeline-body">
+          <div class="timeline-time">09:30–12:30</div>
+          <div class="timeline-title">בריכה · לגונה · חוף Bangtao</div>
+          <div class="timeline-desc">הילדים בבריכה, מבוגרים על כיסאות נוח. חוף Bangtao ממש מחוץ למלון — חול לבן, ים אנדמן, שקט יחסי.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚤</div>
+        <div class="timeline-body">
+          <div class="timeline-time">11:00–12:30</div>
+          <div class="timeline-title">ג'ט סקי · רותם + הבנים · Laguna Beach Sports Centre</div>
+          <div class="timeline-desc">רותם, יוש, שקוד וגילעדו בלבד — חצי שעה עד שעה על הג'ט סקי. דרך מרכז הספורט של Laguna — מפעיל מאושר, ביטוח מסודר, חיוב לחדר. אפס בעיות.</div>
+          <div class="tip-box tip-green">💡 לפנות לפרונט המלון עם הגעה ולשריין — לציין שמעוניינים ב-jet ski דרך Laguna Beach Sports Centre</div>
+          <div class="tip-box tip-warn" style="margin-top:6px">⚠️ גיל מינימלי לנהיגה עצמאית בדרך כלל 16+ — גילעדו (9) יוכל לנסוע כנוסע עם אחד המבוגרים</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fdf4ff">💆</div>
+        <div class="timeline-body">
+          <div class="timeline-time">13:00–15:00</div>
+          <div class="timeline-title">עיסוי תאילנדי · המבוגרים</div>
+          <div class="timeline-desc">בזמן שהבנים בבריכה — ספא של המלון או עיסוי על החוף. 300-500 באט לשעה. זו תאילנד — עיסוי הוא חובה.</div>
+          <div class="tip-box tip-blue">💡 לשאול בפרונט המלון על SAii Spa — לרוב יש הנחה לאורחים</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fff8e6">🌴</div>
+        <div class="timeline-body">
+          <div class="timeline-time">15:00–18:00</div>
+          <div class="timeline-title">אחה"צ חופשי</div>
+          <div class="timeline-desc">כל אחד עושה מה שבא לו. שינה, בריכה, קריאה, שוטטות. אין לוח זמנים.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🍜</div>
+        <div class="timeline-body">
+          <div class="timeline-time">19:00–21:00</div>
+          <div class="timeline-title">ארוחת ערב · Bampot Kitchen & Bar</div>
+          <div class="timeline-desc">מסעדה מומלצת באזור Laguna — אוכל תאילנדי-אסייתי ברמה גבוהה, אווירה נעימה, מרחק קצר מהמלון.</div>
+          <div class="link-row">
+            <a href="https://maps.google.com/?q=Bampot+Kitchen+Bar+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tab-3-food" class="tab-panel">
+      <div class="section-label">אוכל היום</div>
+      <div class="food-grid">
+        <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">SAii Laguna</div><div class="food-loc">כלול · בלי מהירות</div></div>
+        <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">המלון / הבריכה</div><div class="food-loc">סנאק או ארוחה קלה</div></div>
+      </div>
+      <div class="card">
+        <div class="food-meal">ערב</div>
+        <div class="card-title" style="margin-top:4px">Bampot Kitchen & Bar</div>
+        <div class="card-sub">אזור Laguna · ~10 דקות מהמלון</div>
+        <div class="card-body" style="margin-top:6px">מסעדה אסייתית עם תפריט מגוון — מנות תאילנדיות, אסייתיות, ים. אווירה נעימה ולא יקרה מדי. מתאים לקבוצה גדולה.</div>
+        <div class="link-row"><a href="https://maps.google.com/?q=Bampot+Kitchen+Bar+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+      </div>
+    </div>
+    <div id="tab-3-logistics" class="tab-panel">
+      <div class="section-label">המלון</div>
+      <div class="card">
+        <div class="card-title">SAii Laguna Phuket</div>
+        <div class="card-body">לילה 3 מתוך 5 · 5/7 → 10/7 · Bangtao Beach</div>
+        <div class="link-row">
+          <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+          <a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a>
+        </div>
+      </div>
+    </div>
+    <div id="tab-3-tomorrow" class="tab-panel">
+      <div class="section-label">מחר — רביעי 8 יולי</div>
+      <div class="card">
+        <div class="card-title">🛍️ יום קניות · Porto de Phuket + Central Phuket</div>
+        <div class="card-body">בוקר ב-Porto de Phuket (5 דקות מהמלון), צהריים ב-Boat Avenue, אחה"צ ב-Central Phuket Festival (הקניון הגדול). ערב — Boat Avenue שוב.</div>
+        <div class="link-row">
+          <a href="https://maps.google.com/?q=Porto+de+Phuket+Laguna" class="link-btn link-maps">📍 Porto Maps</a>
+          <a href="https://maps.google.com/?q=Central+Phuket+Festival" class="link-btn link-maps">📍 Central Maps</a>
+        </div>
+      </div>
+      <div class="section-label">להכין הלילה</div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להביא תיקים / מזוודה ריקה לקניות</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>כסף מזומן / כרטיס אשראי בכיס</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להזמין Bolt/Grab ל-Central Phuket אחה"צ</span></div>
+    </div>
+    <div id="tab-3-711" class="tab-panel">
+      <div class="section-label">7-Eleven קרוב למלון</div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Laguna entrance</div><div class="seven-addr">Choeng Thale — הכי קרוב לכניסת לגונה</div><div class="seven-rating">⭐ 3.6 · פתוח 24 שעות · ATM</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Bangtao (חדש)</div><div class="seven-addr">Choeng Thale — ליד Sunwing Hotel</div><div class="seven-rating">⭐ 5.0 · פתוח 24 שעות</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Bangtao+Beach+Sunwing+Phuket" class="seven-link">📍 נווט</a>
       </div>
     </div>
   </div>
 
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#fef3c7">🎢</div>
-    <div class="timeline-body">
-      <div class="timeline-time">10:00–13:00</div>
-      <div class="timeline-title">פארק · סבב ראשון</div>
-      <div class="timeline-desc">מגלשות אתגריות לגדולים, אזור ילדים לקטנים, בריכת גלים לכולם. הפארק ענק — אין צורך לרוץ.</div>
-      <div class="tip-box tip-green">💡 הכי שוות: Eagle Flyer · Racing Nagas · Rock N Raft · Angels' Slides</div>
-    </div>
-  </div>
+```
+<div id="tab-3-optional" class="tab-panel">
+  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
 
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8faf0">🍽️</div>
-    <div class="timeline-body">
-      <div class="timeline-time">13:00–14:00</div>
-      <div class="timeline-title">צהריים בפארק</div>
-      <div class="timeline-desc">Tropical Beach (פירות ים על הגריל), The Village (תאילנדי מסורתי), Coral World (לילדים). ~300-400 באט לאיש.</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#fef3c7">🌊</div>
-    <div class="timeline-body">
-      <div class="timeline-time">14:00–17:00</div>
-      <div class="timeline-title">נהר עצלן + בריכת גלים</div>
-      <div class="timeline-desc">Asia's longest lazy river — 550 מטר. מושלם בשעות החמות. בריכת הגלים פתוחה בשעות קבועות — לשים לב ללוח.</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8f0fe">🚗</div>
-    <div class="timeline-body">
-      <div class="timeline-time">17:00–17:30</div>
-      <div class="timeline-title">חזרה למלון · Bolt/Grab</div>
-      <div class="timeline-desc">מקלחות, מנוחה קצרה. ערב — Catch Beach Club.</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="time-icon" style="background:#e8faf0">🍜</div>
-    <div class="timeline-body">
-      <div class="timeline-time">19:30–21:30</div>
-      <div class="timeline-title">ארוחת ערב · Catch Beach Club</div>
-      <div class="timeline-desc">ממש על חוף Bangtao, 5 דקות מהמלון. ⭐ 4.2 (2,122 ביקורות). אחד הביץ' קלאב הכי מומלצים בפוקט — אוירה, ים, אוכל טוב.</div>
-      <div class="tip-box tip-warn">⚠️ הזמנה מראש חובה ל-10 אנשים</div>
-      <div class="link-row">
-        <a href="https://www.google.com/maps/search/?api=1&query=Catch+Beach+Club+Phuket&query_place_id=ChIJH6s1-5A5UDARH6VeybNnz84" target="_blank" class="link-btn link-maps">📍 Maps · ⭐ 4.2</a>
-        <a href="https://www.catchbeachclub.com" target="_blank" class="link-btn link-web">🌐 הזמנה</a>
-        <a href="tel:+66653482017" class="link-btn link-phone">📞 +66 65 348 2017</a>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
+        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
       </div>
+      <span class="badge badge-warn">30 דקות</span>
     </div>
+    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
   </div>
-</div>
 
-<div id="tab-2-food" class="tab-panel">
-  <div class="section-label">אוכל היום</div>
-  <div class="food-grid">
-    <div class="food-card">
-      <div class="food-meal">בוקר</div>
-      <div class="food-name">SAii Laguna</div>
-      <div class="food-loc">כלול בחדר · לאכול טוב</div>
-    </div>
-    <div class="food-card">
-      <div class="food-meal">צהריים</div>
-      <div class="food-name">בפארק</div>
-      <div class="food-loc">Tropical Beach / The Village</div>
-    </div>
-  </div>
   <div class="card">
-    <div class="food-meal">ערב</div>
-    <div class="card-title" style="margin-top:4px">Catch Beach Club</div>
-    <div class="card-sub">Bangtao Beach · 5 דקות מהמלון · פתוח 07:30–00:00</div>
-    <div class="card-body" style="margin-top:6px">ביץ' קלאב על הים עם אוכל ברמה גבוהה. פירות ים, מנות תאילנדיות, קוקטיילים. ⭐ 4.2 על 2,122 ביקורות — "the ultimate place to be here".</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
+        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">חצי יום</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
+        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">יום שלם</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
     <div class="link-row">
-      <a href="https://www.google.com/maps/search/?api=1&query=Catch+Beach+Club+Phuket&query_place_id=ChIJH6s1-5A5UDARH6VeybNnz84" target="_blank" class="link-btn link-maps">📍 Maps · ⭐ 4.2</a>
-      <a href="https://www.catchbeachclub.com" target="_blank" class="link-btn link-web">🌐 הזמנה</a>
-      <a href="tel:+66653482017" class="link-btn link-phone">📞 +66 65 348 2017</a>
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
     </div>
   </div>
-</div>
 
-<div id="tab-2-logistics" class="tab-panel">
-  <div class="section-label">Andamanda Water Park</div>
   <div class="card">
-    <div class="card-title">פרטי הפארק</div>
-    <div class="card-body">
-      333/3 Moo 1, Kathu District, Phuket<br>
-      שעות: 10:00–19:00 (כניסה אחרונה 18:30)<br><br>
-      מחירים (דרך האפליקציה):<br>
-      מבוגר / מעל 121 ס"מ: <strong>1,600 באט</strong><br>
-      ילד 91–121 ס"מ: <strong>1,100 באט</strong><br>
-      מתחת ל-91 ס"מ: חינם<br><br>
-      10 × 1,600 = ~16,000 באט (~1,600 ₪)
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
+        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
+      </div>
+      <span class="badge badge-warn">חצי-יום מלא</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row">
+      <span class="pill">מתאים לכל הגילאים</span>
+      <span class="pill">ציוד כלול בדרך כלל</span>
+      <span class="pill">~1,200-1,800 באט לאיש</span>
     </div>
     <div class="link-row">
-      <a href="https://www.andamandaphuket.com/booking" target="_blank" class="link-btn link-web">🌐 הזמנת כרטיסים</a>
-      <a href="https://www.google.com/maps/search/?api=1&query=Andamanda+Phuket&query_place_id=ChIJ_YjQ6uQxUDARHVetUBkoi9k" target="_blank" class="link-btn link-maps">📍 Maps · ⭐ 4.3</a>
-      <a href="tel:+6676646777" class="link-btn link-phone">📞 +66 76 646 777</a>
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
     </div>
-    <div class="tip-box tip-warn" style="margin-top:8px">⚠️ להוריד אפליקציית Andamanda ולהזמין מראש — זול יותר מהקופה</div>
-  </div>
-</div>
-
-<div id="tab-2-tomorrow" class="tab-panel">
-  <div class="section-label">מחר — שלישי 7 יולי</div>
-  <div class="card">
-    <div class="card-title">☀️ יום מלון · מנוחה וחוף</div>
-    <div class="card-body">אחרי יום עמוס בפארק — מחר יום רגוע. בריכה, לגונה, עיסוי, חוף Bangtao. לא יוצאים לשום מקום אם אין חשק.</div>
-  </div>
-  <div class="section-label">להכין הלילה</div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לחשוב מי רוצה עיסוי מחר — כדאי להזמין</span></div>
-  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לבדוק מזג אוויר בבוקר</span></div>
-</div>
-
-<div id="tab-2-711" class="tab-panel">
-  <div class="section-label">7-Eleven קרוב לפארק</div>
-
-  <div class="seven-item">
-    <div class="seven-info">
-      <div class="seven-name">7-Eleven · Kathu</div>
-      <div class="seven-addr">61/30 Kathu, Amphoe Kathu — קרוב לפארק</div>
-      <div class="seven-rating">⭐ 2.5 · פתוח 24 שעות</div>
-    </div>
-    <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Kathu+Phuket&query_place_id=ChIJkXUUH1IwUDARMSmTcZPqOjE" target="_blank" class="seven-link">📍 נווט</a>
   </div>
 
-  <div class="seven-item">
-    <div class="seven-info">
-      <div class="seven-name">7-Eleven · Ratsada</div>
-      <div class="seven-addr">152 Thanon Pracha-Uthit 1</div>
-      <div class="seven-rating">⭐ 4.9 · פתוח 24 שעות · המומלץ באזור</div>
-    </div>
-    <a href="https://www.google.com/maps/search/?api=1&query=7-Eleven+Ratsada+Phuket&query_place_id=ChIJuShSy7wxUDARY64nNLd3NuM" target="_blank" class="seven-link">📍 נווט</a>
-  </div>
-
-  <div class="tip-box tip-blue" style="margin-top:12px">💡 כדאי לקנות מים ונשנושים ב-7-Eleven לפני הכניסה לפארק — בפנים הכל יקר יותר.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
 </div>
 ```
 
+</div>
+
+<!-- ======= יום 4 ======= -->
+
+<div id="day-4" class="day-page">
+  <div class="header">
+    <div class="trip-label">תאילנד 2026 · SAii Laguna Phuket</div>
+    <div class="day-title">יום 4 — רביעי, 8 יולי</div>
+    <div class="day-sub">יום קניות · Porto de Phuket · Central Phuket · שוק לילה</div>
+    <div class="tags-row">
+      <span class="tag tag-weather-ok">🛍️ יום קניות — מושלם גם בגשם</span>
+      <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="tag tag-711">🏪 7-Eleven הקרוב</a>
+    </div>
   </div>
+  <div class="nav-tabs">
+    <button class="tab active" onclick="showTab('4-schedule',this)">לוז היום</button>
+    <button class="tab" onclick="showTab('4-food',this)">אוכל</button>
+    <button class="tab" onclick="showTab('4-logistics',this)">לוגיסטיקה</button>
+    <button class="tab" onclick="showTab('4-tomorrow',this)">מחר</button>
+    <button class="tab" onclick="showTab('4-711',this)">🏪 7-Eleven</button>
+    <button class="tab" onclick="showTab('4-optional',this)">💡 אופציונלי</button>
+  </div>
+  <div class="content">
+    <div id="tab-4-schedule" class="tab-panel active">
+      <div class="section-label">לוז מוצע</div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">☕</div>
+        <div class="timeline-body">
+          <div class="timeline-time">08:00–09:30</div>
+          <div class="timeline-title">ארוחת בוקר במלון</div>
+          <div class="timeline-desc">כלול ב-SAii Laguna. בנחת — הקניונים פותחים מאוחר.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fdf4ff">🛍️</div>
+        <div class="timeline-body">
+          <div class="timeline-time">10:00–13:00</div>
+          <div class="timeline-title">Porto de Phuket · בוקר</div>
+          <div class="timeline-desc">קניון פתוח-אוויר ממש בתוך אזור Laguna — 5 דקות מהמלון. חנויות מותגים, מזכרות, בגדים. אווירה נעימה, לא עמוס. מושלם להתחיל את היום.</div>
+          <div class="link-row">
+            <a href="https://maps.google.com/?q=Porto+de+Phuket+Laguna" class="link-btn link-maps">📍 Maps</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🍽️</div>
+        <div class="timeline-body">
+          <div class="timeline-time">13:00–14:30</div>
+          <div class="timeline-title">צהריים · Boat Avenue</div>
+          <div class="timeline-desc">ממש ליד Porto — לאכול ולנוח לפני סיבוב שני. אוכל תאילנדי טרי.</div>
+          <div class="link-row"><a href="https://maps.google.com/?q=Boat+Avenue+Phuket+Cherngtalay" class="link-btn link-maps">📍 Maps · ⭐ 4.9</a></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fdf4ff">🏬</div>
+        <div class="timeline-body">
+          <div class="timeline-time">15:00–18:30</div>
+          <div class="timeline-title">Central Phuket Festival · קניות רציניות</div>
+          <div class="timeline-desc">הקניון הגדול ביותר בפוקט — שני בניינים, כל המותגים, סופרמרקט ענק, אוכל, קולנוע. ~25 דקות מהמלון ב-Bolt/Grab. מקורה לחלוטין — מושלם אם יורד גשם.</div>
+          <div class="link-row">
+            <a href="https://maps.google.com/?q=Central+Phuket+Festival" class="link-btn link-maps">📍 Maps</a>
+            <a href="https://www.centralphuket.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚗</div>
+        <div class="timeline-body">
+          <div class="timeline-time">18:30–19:00</div>
+          <div class="timeline-title">חזרה למלון · Bolt/Grab</div>
+          <div class="timeline-desc">לשים מזוודות ולצאת לאכול.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🍜</div>
+        <div class="timeline-body">
+          <div class="timeline-time">19:30–21:30</div>
+          <div class="timeline-title">ארוחת ערב · Boat Avenue</div>
+          <div class="timeline-desc">ערב אחרון באזור — Boat Avenue שוב או מסעדה חדשה בסביבה. לנסות Khao Soi, Moo Ping, Som Tam.</div>
+          <div class="pill-row">
+            <span class="pill">Khao Soi</span><span class="pill">Moo Ping</span><span class="pill">Som Tam</span><span class="pill">Green Curry</span>
+          </div>
+          <div class="link-row"><a href="https://maps.google.com/?q=Boat+Avenue+Phuket+Cherngtalay" class="link-btn link-maps">📍 Maps</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="tab-4-food" class="tab-panel">
+      <div class="section-label">אוכל היום</div>
+      <div class="food-grid">
+        <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">SAii Laguna</div><div class="food-loc">כלול · בנחת</div></div>
+        <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">Boat Avenue</div><div class="food-loc">ליד Porto · תאילנדי</div></div>
+      </div>
+      <div class="card">
+        <div class="food-meal">ערב</div>
+        <div class="card-title" style="margin-top:4px">Boat Avenue</div>
+        <div class="card-sub">~5 דקות מהמלון · Cherngtalay</div>
+        <div class="card-body" style="margin-top:6px">ביקור אחרון לפני עזיבת פוקט. לנסות מה שלא ניסיתם עדיין — Khao Soi הוא חובה.</div>
+        <div class="pill-row">
+          <span class="pill">Khao Soi</span><span class="pill">Moo Ping</span><span class="pill">Som Tam</span><span class="pill">Green Curry</span><span class="pill">Papaya Salad</span>
+        </div>
+        <div class="link-row"><a href="https://maps.google.com/?q=Boat+Avenue+Phuket+Cherngtalay" class="link-btn link-maps">📍 Maps</a></div>
+      </div>
+    </div>
+    <div id="tab-4-logistics" class="tab-panel">
+      <div class="section-label">קניונים היום</div>
+      <div class="card">
+        <div class="card-title">Porto de Phuket</div>
+        <div class="card-body">אזור Laguna · 5 דקות מהמלון<br>פתוח: 10:00–22:00<br>קניון פתוח-אוויר · חנויות + מסעדות</div>
+        <div class="link-row"><a href="https://maps.google.com/?q=Porto+de+Phuket+Laguna" class="link-btn link-maps">📍 Maps</a></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Central Phuket Festival</div>
+        <div class="card-body">~25 דקות מהמלון · Bolt/Grab ~150 באט<br>פתוח: 11:00–22:00<br>הקניון הגדול בפוקט · מקורה לחלוטין</div>
+        <div class="link-row">
+          <a href="https://maps.google.com/?q=Central+Phuket+Festival" class="link-btn link-maps">📍 Maps</a>
+          <a href="https://www.centralphuket.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="section-label">המלון</div>
+      <div class="card">
+        <div class="card-title">SAii Laguna Phuket</div>
+        <div class="card-body">לילה 4 מתוך 5 · 5/7 → 10/7</div>
+        <div class="link-row"><button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button></div>
+      </div>
+    </div>
+    <div id="tab-4-tomorrow" class="tab-panel">
+      <div class="section-label">מחר — חמישי 9 יולי</div>
+      <div class="card">
+        <div class="card-title">🌅 בוקר חופשי + מעבר לאנאנטרה</div>
+        <div class="card-body">בוקר אחרון ב-SAii Laguna — בריכה, ארוחת בוקר מפנקת, צ'ק-אאוט עד 12:00.<br><br>אחה"צ: ספידבוט מ-Laeam Saii Pier בשעה 13:00 לאנאנטרה Koh Yao Yai.</div>
+        <div class="link-row"><button onclick="openModal('speedboat1')" class="link-btn link-voucher">📋 פרטי הספידבוט</button></div>
+      </div>
+      <div class="section-label">להכין הלילה</div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להתחיל לארוז — צ'ק-אאוט מחר עד 12:00</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להזמין Bolt/Grab ל-Laeam Saii Pier (~30 דקות)</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לאחסן חפצים יקרים — ספידבוט יכול להירטב</span></div>
+      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>לבדוק מזג אוויר לספידבוט</span></div>
+    </div>
+    <div id="tab-4-711" class="tab-panel">
+      <div class="section-label">7-Eleven קרוב למלון</div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Laguna entrance</div><div class="seven-addr">Choeng Thale — הכי קרוב לכניסת לגונה</div><div class="seven-rating">⭐ 3.6 · פתוח 24 שעות · ATM</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Bangtao (חדש)</div><div class="seven-addr">Choeng Thale — ליד Sunwing Hotel</div><div class="seven-rating">⭐ 5.0 · פתוח 24 שעות</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Bangtao+Beach+Sunwing+Phuket" class="seven-link">📍 נווט</a>
+      </div>
+    </div>
+  </div>
+
+```
+<div id="tab-4-optional" class="tab-panel">
+  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
+        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
+      </div>
+      <span class="badge badge-warn">30 דקות</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
+        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">חצי יום</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
+        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">יום שלם</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
+        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
+      </div>
+      <span class="badge badge-warn">חצי-יום מלא</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row">
+      <span class="pill">מתאים לכל הגילאים</span>
+      <span class="pill">ציוד כלול בדרך כלל</span>
+      <span class="pill">~1,200-1,800 באט לאיש</span>
+    </div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+</div>
+```
+
+</div>
+
+<!-- ======= יום 5 ======= -->
+
+<div id="day-5" class="day-page">
+  <div class="header">
+    <div class="trip-label">תאילנד 2026 · SAii Laguna → Anantara Koh Yao Yai</div>
+    <div class="day-title">יום 5 — חמישי, 9 יולי</div>
+    <div class="day-sub">בוקר אחרון בפוקט · ספידבוט 13:00 · Koh Yao Yai</div>
+    <div class="tags-row">
+      <span class="tag tag-weather-warn">☁️ לבדוק מזג אוויר לספידבוט</span>
+      <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="tag tag-711">🏪 7-Eleven הקרוב</a>
+    </div>
+  </div>
+  <div class="nav-tabs">
+    <button class="tab active" onclick="showTab('5-schedule',this)">לוז היום</button>
+    <button class="tab" onclick="showTab('5-food',this)">אוכל</button>
+    <button class="tab" onclick="showTab('5-logistics',this)">לוגיסטיקה</button>
+    <button class="tab" onclick="showTab('5-tomorrow',this)">מחר</button>
+    <button class="tab" onclick="showTab('5-711',this)">🏪 7-Eleven</button>
+    <button class="tab" onclick="showTab('5-optional',this)">💡 אופציונלי</button>
+  </div>
+  <div class="content">
+    <div id="tab-5-schedule" class="tab-panel active">
+      <div class="section-label">לוז מוצע</div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">☕</div>
+        <div class="timeline-body">
+          <div class="timeline-time">07:30–09:30</div>
+          <div class="timeline-title">ארוחת בוקר מפנקת אחרונה · SAii Laguna</div>
+          <div class="timeline-desc">הבוקר האחרון במלון. לאכול טוב ובנחת — היום יש לוז.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fdf4ff">🧳</div>
+        <div class="timeline-body">
+          <div class="timeline-time">09:30–11:30</div>
+          <div class="timeline-title">ארוז + בריכה אחרונה</div>
+          <div class="timeline-desc">לארוז לפני צ'ק-אאוט. אפשר להשאיר מזוודות בפרונט ולצאת לבריכה עוד שעה.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fff8e6">🏨</div>
+        <div class="timeline-body">
+          <div class="timeline-time">12:00</div>
+          <div class="timeline-title">צ'ק-אאוט · SAii Laguna</div>
+          <div class="timeline-desc">להשאיר מזוודות בפרונט עד היציאה. לבדוק חיובים.</div>
+          <div class="link-row"><button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚗</div>
+        <div class="timeline-body">
+          <div class="timeline-time">12:15</div>
+          <div class="timeline-title">Bolt/Grab → Laeam Saii Pier</div>
+          <div class="timeline-desc">~30 דקות נסיעה. להגיע 15 דקות לפני. שם יהיה נציג Moon Holidays.</div>
+          <div class="link-row"><a href="https://maps.google.com/?q=Laeam+Saii+Pier+Phuket" class="link-btn link-maps">📍 Laeam Saii Pier</a></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚤</div>
+        <div class="timeline-body">
+          <div class="timeline-time">13:00</div>
+          <div class="timeline-title">ספידבוט · Laeam Saii → Anantara</div>
+          <div class="timeline-desc">~30-40 דקות שיט. נוף מהמם על מפרץ פאנג נגה — צוקי גיר, איים. הילדים יאהבו.</div>
+          <div class="tip-box tip-warn">⚠️ לאחסן חפצים רגישים בתיק אטום — ספידבוט יכול להירטב</div>
+          <div class="link-row"><button onclick="openModal('speedboat1')" class="link-btn link-voucher">📋 פרטי הזמנה</button></div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fff8e6">🏨</div>
+        <div class="timeline-body">
+          <div class="timeline-time">~14:00</div>
+          <div class="timeline-title">הגעה · Anantara Koh Yao Yai Resort</div>
+          <div class="timeline-desc">צ'ק-אין, התרשמות מהמלון החדש. 3 לילות על אי מבודד — זה הג'ם של הטיול.</div>
+          <div class="link-row">
+            <button onclick="openModal('anantara')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+            <a href="https://www.anantara.com/en/koh-yao-yai" target="_blank" class="link-btn link-web">🌐 אתר</a>
+            <a href="https://maps.google.com/?q=Anantara+Koh+Yao+Yai+Resort" class="link-btn link-maps">📍 Maps</a>
+          </div>
+          <div style="background:#fff8e6;border:1px solid #f0d080;border-radius:10px;padding:10px 12px;margin-top:8px">
+            <div style="font-size:11px;font-weight:600;color:#a06000;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">✅ לסדר בצ'ק-אין עם הפרונט</div>
+            <div class="check-item" onclick="toggle(this)" style="border-top:none;padding:5px 0"><div class="check-box"></div><span>לבקש חדרים צמודים — Strong Request</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לשריין טיול ג'ט סקי / שייט לאי ג'יימס בונד — ליום 11 או 12</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לשריין טרקטורונים דרך המלון — ליום 12</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לשריין עיסויים בספא המלון</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לברר לוח שיט יומי לאי Koh Yao Noi (100 באט, 8 דקות)</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לאשר ספידבוט חזרה 13/7 14:00 — Thalane Pier</span></div>
+            <div class="check-item" onclick="toggle(this)" style="padding:5px 0"><div class="check-box"></div><span>לברר אפשרות kayaking / snorkeling מהמלון</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🌅</div>
+        <div class="timeline-body">
+          <div class="timeline-time">16:00–21:00</div>
+          <div class="timeline-title">התיישבות · בריכה · ארוחת ערב במלון</div>
+          <div class="timeline-desc">היום הראשון באי — אין לצאת לשום מקום. ארוחת ערב במסעדת המלון עם נוף לים. מגיע.</div>
+        </div>
+      </div>
+    </div>
+    <div id="tab-5-food" class="tab-panel">
+      <div class="section-label">אוכל היום</div>
+      <div class="food-grid">
+        <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">SAii Laguna</div><div class="food-loc">כלול · בוקר אחרון</div></div>
+        <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">בדרך / הספידבוט</div><div class="food-loc">חטיף קל לפני השיט</div></div>
+      </div>
+      <div class="card">
+        <div class="food-meal">ערב</div>
+        <div class="card-title" style="margin-top:4px">מסעדת Anantara</div>
+        <div class="card-sub">Koh Yao Yai · כלול חלקית</div>
+        <div class="card-body" style="margin-top:6px">ארוחת ערב ראשונה באי — במסעדת המלון. נוף לים אנדמן, שקיעה, ים שקט. חוויה מושלמת להגעה.</div>
+      </div>
+    </div>
+    <div id="tab-5-logistics" class="tab-panel">
+      <div class="section-label">צ'ק-אאוט</div>
+      <div class="card">
+        <div class="card-title">SAii Laguna Phuket</div>
+        <div class="card-body">צ'ק-אאוט עד 12:00 · לבדוק חיובים</div>
+        <div class="link-row">
+          <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a>
+        </div>
+      </div>
+      <div class="section-label">ספידבוט</div>
+      <div class="card">
+        <div class="card-title">Laeam Saii Pier → Anantara</div>
+        <div class="card-body">יציאה: 13:00 · ~35 דקות שיט · ווצ'ר 83813</div>
+        <div class="link-row">
+          <button onclick="openModal('speedboat1')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="https://maps.google.com/?q=Laeam+Saii+Pier+Phuket" class="link-btn link-maps">📍 המזח</a>
+        </div>
+      </div>
+      <div class="section-label">המלון הבא</div>
+      <div class="card">
+        <div class="card-title">Anantara Koh Yao Yai Resort</div>
+        <div class="card-body">3 לילות · 10/7 → 13/7 · Koh Yao Yai, Phang Nga</div>
+        <div class="link-row">
+          <button onclick="openModal('anantara')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+          <a href="https://www.anantara.com/en/koh-yao-yai" target="_blank" class="link-btn link-web">🌐 אתר</a>
+          <a href="tel:+6676675888" class="link-btn link-phone">📞 076 675 888</a>
+        </div>
+      </div>
+    </div>
+    <div id="tab-5-tomorrow" class="tab-panel">
+      <div class="section-label">מחר — יום 6 · שישי 10 יולי</div>
+      <div class="card">
+        <div class="card-title">🏝️ יום ראשון באי · Koh Yao Yai</div>
+        <div class="card-body">יום הסתגלות לאי. בריכה, חוף, טיול קצר. האי שקט ובתולי — פחות תיירים, יותר טבע. מחר נחשוב על אטרקציות.</div>
+      </div>
+    </div>
+    <div id="tab-5-711" class="tab-panel">
+      <div class="section-label">7-Eleven לפני עזיבת פוקט</div>
+      <div class="seven-item">
+        <div class="seven-info"><div class="seven-name">7-Eleven · Laguna entrance</div><div class="seven-addr">Choeng Thale — בדרך למזח</div><div class="seven-rating">⭐ 3.6 · פתוח 24 שעות</div></div>
+        <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="seven-link">📍 נווט</a>
+      </div>
+      <div class="tip-box tip-warn" style="margin-top:12px">⚠️ ב-Koh Yao Yai יש רק 7-Eleven אחד עם מבחר מוגבל. לקנות מה שצריך לפני עלייה לספידבוט — מים, חטיפים, קרם הגנה.</div>
+    </div>
+  </div>
+
+```
+<div id="tab-5-optional" class="tab-panel">
+  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
+        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
+      </div>
+      <span class="badge badge-warn">30 דקות</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
+        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">חצי יום</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
+        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
+      </div>
+      <span class="badge badge-warn">יום שלם</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
+        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
+      </div>
+      <span class="badge badge-warn">חצי-יום מלא</span>
+    </div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row">
+      <span class="pill">מתאים לכל הגילאים</span>
+      <span class="pill">ציוד כלול בדרך כלל</span>
+      <span class="pill">~1,200-1,800 באט לאיש</span>
+    </div>
+    <div class="link-row">
+      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
+    </div>
+  </div>
+
+  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+</div>
+```
+
 </div>
 
 <script>
@@ -589,6 +1397,8 @@ function showTab(id, el) {
   el.classList.add('active');
 }
 function toggle(el) { el.classList.toggle('done'); }
+function openModal(id) { document.getElementById('modal-' + id).classList.add('open'); }
+function closeModal(id) { document.getElementById('modal-' + id).classList.remove('open'); }
 </script>
 
 </body>
