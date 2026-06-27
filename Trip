@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>תאילנד 2026 · יום 1</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; }
+
+.header {
+  background: #fff;
+  padding: 20px 16px 14px;
+  border-bottom: 1px solid #e8e8e4;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.trip-label { font-size: 11px; color: #999; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
+.day-title { font-size: 22px; font-weight: 600; color: #1a1a1a; margin-bottom: 2px; }
+.day-sub { font-size: 13px; color: #666; }
+.weather-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: #fff8e6; color: #a06000; border: 1px solid #f0d080;
+  border-radius: 20px; font-size: 11px; padding: 3px 10px; margin-top: 8px;
+}
+
+.nav-tabs {
+  display: flex; background: #fff;
+  border-bottom: 1px solid #e8e8e4;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+}
+.tab {
+  padding: 11px 16px; font-size: 13px; color: #888; cursor: pointer;
+  border: none; background: none; border-bottom: 2px solid transparent;
+  white-space: nowrap; flex-shrink: 0;
+}
+.tab.active { color: #1a6ef5; border-bottom-color: #1a6ef5; font-weight: 500; }
+
+.content { padding: 16px; max-width: 600px; margin: 0 auto; }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.section-label {
+  font-size: 10px; font-weight: 600; color: #aaa;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin-bottom: 10px; margin-top: 20px;
+}
+.section-label:first-child { margin-top: 0; }
+
+/* Timeline */
+.timeline { position: relative; }
+.timeline-item { display: flex; gap: 12px; margin-bottom: 16px; position: relative; }
+.timeline-item:not(:last-child)::before {
+  content: ''; position: absolute;
+  right: 19px; top: 40px; bottom: -8px;
+  width: 1px; background: #e8e8e4;
+}
+.time-icon {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 18px;
+}
+.timeline-body { flex: 1; padding-top: 6px; }
+.timeline-time { font-size: 11px; color: #aaa; font-weight: 500; margin-bottom: 2px; }
+.timeline-title { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.timeline-desc { font-size: 13px; color: #555; line-height: 1.5; }
+.tip-box {
+  background: #e8f0fe; border: 1px solid #c5d5f8; border-radius: 8px;
+  padding: 7px 10px; font-size: 12px; color: #1a4fa0;
+  margin-top: 6px; display: flex; gap: 6px; align-items: flex-start;
+}
+
+/* Cards */
+.card {
+  background: #fff; border: 1px solid #e8e8e4; border-radius: 12px;
+  padding: 14px; margin-bottom: 10px;
+}
+.card-title { font-size: 14px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.card-sub { font-size: 12px; color: #888; margin-bottom: 2px; }
+.card-body { font-size: 13px; color: #555; line-height: 1.5; }
+.card-contact { font-size: 11px; color: #aaa; margin-top: 6px; font-family: monospace; }
+
+.pill-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.pill {
+  font-size: 11px; background: #f5f5f0; border: 1px solid #e0e0d8;
+  border-radius: 10px; padding: 2px 8px; color: #666;
+}
+
+.badge {
+  font-size: 10px; padding: 2px 7px; border-radius: 8px;
+  font-weight: 600; margin-left: 6px;
+}
+.badge-warn { background: #fff3cd; color: #856404; }
+.badge-info { background: #e8f0fe; color: #1a4fa0; }
+
+/* Food grid */
+.food-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.food-card { background: #fff; border: 1px solid #e8e8e4; border-radius: 10px; padding: 11px 12px; }
+.food-meal { font-size: 10px; color: #aaa; font-weight: 600; text-transform: uppercase; margin-bottom: 2px; }
+.food-name { font-size: 14px; font-weight: 600; color: #1a1a1a; }
+.food-loc { font-size: 12px; color: #888; }
+.food-tags { font-size: 11px; color: #aaa; margin-top: 3px; }
+
+/* Checklist */
+.checklist { margin-top: 12px; }
+.check-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: #444; padding: 8px 0;
+  border-top: 1px solid #f0f0ec; cursor: pointer;
+}
+.check-item:first-child { border-top: none; }
+.check-box {
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 1.5px solid #ddd; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.check-item.done .check-box { background: #22c55e; border-color: #22c55e; }
+.check-item.done .check-box::after { content: '✓'; font-size: 11px; color: #fff; font-weight: 700; }
+.check-item.done span { text-decoration: line-through; color: #aaa; }
+
+/* Tomorrow box */
+.tomorrow-card {
+  background: #fff; border: 1px solid #e8e8e4; border-radius: 12px; padding: 14px;
+}
+.tomorrow-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; }
+.tomorrow-body { font-size: 13px; color: #555; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="trip-label">תאילנד 2026 · SAii Laguna Phuket</div>
+  <div class="day-title">יום 1 — ראשון, 5 יולי</div>
+  <div class="day-sub">יום הגעה · הכנסה לאווירה · מנוחה</div>
+  <div class="weather-pill">☁️ עונת גשמים — גשם קצר אפשרי, לא כל היום</div>
+</div>
+
+<div class="nav-tabs">
+  <button class="tab active" onclick="showTab('schedule',this)">לוז היום</button>
+  <button class="tab" onclick="showTab('food',this)">אוכל</button>
+  <button class="tab" onclick="showTab('logistics',this)">לוגיסטיקה</button>
+  <button class="tab" onclick="showTab('tomorrow',this)">מחר</button>
+</div>
+
+<div class="content">
+
+  <!-- לוז היום -->
+  <div id="tab-schedule" class="tab-panel active">
+    <div class="section-label">לוז מוצע</div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#f0eaff">🌙</div>
+        <div class="timeline-body">
+          <div class="timeline-time">לילה 4/7 → בוקר 5/7</div>
+          <div class="timeline-title">לינה · The Snug Airportel</div>
+          <div class="timeline-desc">נחיתה 23:40. הגעה לאכסניה ~00:30. שני חדרים — רותם+גילעדו, יוש. ארוחת בוקר כלולה.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">☕</div>
+        <div class="timeline-body">
+          <div class="timeline-time">08:00–10:30</div>
+          <div class="timeline-title">ארוחת בוקר + איסוף חפצים</div>
+          <div class="timeline-desc">ארוחת בוקר כלולה. ואן מגיע ב-11:00 — אין מה למהר.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🚐</div>
+        <div class="timeline-body">
+          <div class="timeline-time">11:00</div>
+          <div class="timeline-title">איסוף ואן · Snug → SAii Laguna</div>
+          <div class="timeline-desc">מחוץ לכניסה — הנהג מחכה עם שלט. נסיעה ~45 דקות לחוף Bangtao.</div>
+          <div class="tip-box">📋 ווצ'ר 84009 · שם: Ran Manor · איסוף 11:00</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#fff8e6">🏨</div>
+        <div class="timeline-body">
+          <div class="timeline-time">~12:00</div>
+          <div class="timeline-title">הגעה ל-SAii Laguna Phuket</div>
+          <div class="timeline-desc">צ'ק-אין רשמי מ-14:00. אם ביקשתם early check-in מראש — ייתכן שיהיה אפשרי. בינתיים — הבריכה פתוחה מיד.</div>
+          <div class="tip-box">📌 לבקש חדרים צמודים · 4 חדרי Lagoon View + ABF</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8f0fe">🏊</div>
+        <div class="timeline-body">
+          <div class="timeline-time">12:00–17:00</div>
+          <div class="timeline-title">בריכה · לגונה · מנוחה</div>
+          <div class="timeline-desc">המלון הוא האטרקציה היום. ילדים בבריכה, מבוגרים נושמים. אין תוכנית — זה הפואנטה.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#e8faf0">🍜</div>
+        <div class="timeline-body">
+          <div class="timeline-time">19:00–21:00</div>
+          <div class="timeline-title">ארוחת ערב · Boat Avenue</div>
+          <div class="timeline-desc">5 דקות מהמלון. מרכז מסעדות ושוק אוכל תאילנדי — אווירה קלילה, לא עמוס. ארוחה ראשונה לכולם ביחד.</div>
+          <div class="tip-box">⭐ חובה לנסות: Pad Thai · Tom Yum Goong · Pad Kra Pao</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time-icon" style="background:#f5f5f0">🌙</div>
+        <div class="timeline-body">
+          <div class="timeline-time">21:00+</div>
+          <div class="timeline-title">חזרה למלון · שינה מוקדמת</div>
+          <div class="timeline-desc">הגוף עדיין בזמן ישראל. שינה מוקדמת = יום מחר טוב יותר.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- אוכל -->
+  <div id="tab-food" class="tab-panel">
+    <div class="section-label">אוכל היום</div>
+    <div class="food-grid">
+      <div class="food-card">
+        <div class="food-meal">בוקר</div>
+        <div class="food-name">Snug Airportel</div>
+        <div class="food-loc">כלול בחדר</div>
+      </div>
+      <div class="food-card">
+        <div class="food-meal">צהריים</div>
+        <div class="food-name">המלון</div>
+        <div class="food-loc">SAii Laguna</div>
+        <div class="food-tags">סנאק קל בבריכה</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="food-meal">ערב — הארוחה של היום</div>
+      <div class="card-title" style="margin-top:4px">Boat Avenue</div>
+      <div class="card-sub">~5 דקות מהמלון · Cherngtalay, Thalang</div>
+      <div class="card-body" style="margin-top:8px">
+        מרכז מסעדות ואוכל רחוב — אחד המומלצים בצפון פוקט. אווירה תאילנדית אמיתית, לא תיירותי מדי. מושלם לארוחה ראשונה של הטיול עם כל הקבוצה.
+      </div>
+      <div class="pill-row">
+        <span class="pill">Pad Thai</span>
+        <span class="pill">Tom Yum Goong</span>
+        <span class="pill">Pad Kra Pao</span>
+        <span class="pill">Massaman Curry</span>
+        <span class="pill">Mango Sticky Rice</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- לוגיסטיקה -->
+  <div id="tab-logistics" class="tab-panel">
+    <div class="section-label">לינת הלילה</div>
+
+    <div class="card">
+      <div class="card-title">The Snug & The Sierra Airportel</div>
+      <div class="card-body">
+        לילה אחד · 4/7 שבת → 5/7 ראשון<br>
+        צ'ק-אין מ-15:00 | צ'ק-אאוט עד 11:00<br>
+        Nai Yang Beach — ממש ליד שדה התעופה
+      </div>
+      <div class="pill-row">
+        <span class="pill">Confirmation: 5297.820.517</span>
+        <span class="pill">PIN: 8140</span>
+        <span class="pill">ארוחת בוקר כלולה</span>
+      </div>
+      <div class="card-contact">📞 +66 93 159 2462</div>
+    </div>
+
+    <div class="section-label">המלון הבא</div>
+
+    <div class="card">
+      <div class="card-title">SAii Laguna Phuket</div>
+      <div class="card-body">
+        5 לילות · 5/7 → 10/7<br>
+        4 חדרי Lagoon View + ארוחת בוקר כלולה<br>
+        323 Moo 2, Srisoonthorn Rd, Bangtao Beach
+      </div>
+      <div class="pill-row">
+        <span class="pill">ווצ'ר 83812</span>
+        <span class="pill">Confirmation: 842747353</span>
+        <span class="pill">בקשה: חדרים צמודים</span>
+      </div>
+      <div class="card-contact">📞 076 360 600</div>
+    </div>
+
+    <div class="section-label">העברות</div>
+
+    <div class="card">
+      <div style="display:flex; align-items:center; margin-bottom:6px">
+        <div class="card-title" style="margin:0">ואן: Snug → SAii Laguna</div>
+        <span class="badge badge-warn">היום</span>
+      </div>
+      <div class="card-body">ווצ'ר 84009 · איסוף 11:00 מחוץ לאכסניה · שם: Ran Manor · Moon Holidays</div>
+      <div class="card-contact">📞 02-1266589 · 082-6914452</div>
+    </div>
+  </div>
+
+  <!-- מחר -->
+  <div id="tab-tomorrow" class="tab-panel">
+    <div class="section-label">מחר — שני 6 יולי</div>
+
+    <div class="tomorrow-card">
+      <div class="tomorrow-title">🎢 Andamanda Water Park</div>
+      <div class="tomorrow-body">
+        פארק המים הגדול של פוקט — מגלשות, בריכות גלים, אטרקציות לכל הגילאים. כ-20 דקות מהמלון. יום שלם של כיף בלי לחץ — נכנסים בעשר-אחת, יוצאים כשמתחשק.
+      </div>
+
+      <div class="section-label" style="margin-top:14px">להכין הלילה</div>
+      <div class="checklist" id="checklist">
+        <div class="check-item" onclick="toggle(this)">
+          <div class="check-box"></div><span>בגדי ים לכולם + מגבות</span>
+        </div>
+        <div class="check-item" onclick="toggle(this)">
+          <div class="check-box"></div><span>קרם הגנה גבוה — חובה</span>
+        </div>
+        <div class="check-item" onclick="toggle(this)">
+          <div class="check-box"></div><span>להזמין Bolt/Grab לבוקר (~200 באט)</span>
+        </div>
+        <div class="check-item" onclick="toggle(this)">
+          <div class="check-box"></div><span>כסף מזומן בבאט לכניסה ואוכל</span>
+        </div>
+        <div class="check-item" onclick="toggle(this)">
+          <div class="check-box"></div><span>לבדוק מזג אוויר בבוקר לפני יציאה</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showTab(name, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  el.classList.add('active');
+}
+function toggle(el) {
+  el.classList.toggle('done');
+}
+</script>
+</body>
+</html>
