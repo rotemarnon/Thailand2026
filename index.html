@@ -262,7 +262,8 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
 <!-- Day Nav -->
 
 <div class="day-nav">
-  <button class="day-btn active" onclick="showDay(1,this)"><span class="day-num">1</span>5/7 ראשון</button>
+  <button class="day-btn active" onclick="showDay(0,this)"><span class="day-num">📖</span>מבוא</button>
+  <button class="day-btn" onclick="showDay(1,this)"><span class="day-num">1</span>5/7 ראשון</button>
   <button class="day-btn" onclick="showDay(2,this)"><span class="day-num">2</span>6/7 שני</button>
   <button class="day-btn" onclick="showDay(3,this)"><span class="day-num">3</span>7/7 שלישי</button>
   <button class="day-btn" onclick="showDay(4,this)"><span class="day-num">4</span>8/7 רביעי</button>
@@ -280,7 +281,111 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
 
 <!-- ======= יום 1 ======= -->
 
-<div id="day-1" class="day-page active">
+<div id="day-0" class="day-page active">
+  <div class="header">
+    <div class="trip-label">תאילנד 2026 · ארנון & מנורים</div>
+    <div class="day-title">מבוא לטיול</div>
+    <div class="day-sub">3 יעדים · 15 לילות · 10 אנשים · 4–19 יולי 2026</div>
+    <div class="tags-row">
+      <span class="tag tag-weather-ok">🌴 עונת הגשמים — גלים, שקיעות, וירוק מושלם</span>
+    </div>
+  </div>
+  <div class="content" style="padding-top:16px">
+
+```
+<div class="card" style="background:linear-gradient(135deg,#e8f0fe,#fdf4ff);border-color:#c5d5f8;margin-bottom:16px">
+  <div style="font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:8px">🇹🇭 הטיול הזה בנוי על עיקרון אחד</div>
+  <div style="font-size:13px;color:#444;line-height:1.7">מנוחה אמיתית — עם רגעי הרפתקה שנבחרו בקפידה. לא ממהרים, לא ממלאים כל יום. מלונות ברמה גבוהה שהם עצמם אטרקציה, ואוכל אסייתי טוב בכל הזדמנות.</div>
+</div>
+
+<div class="section-label">🗺️ שלושת היעדים</div>
+
+<div class="card" style="border-right:4px solid #1a6ef5;margin-bottom:10px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <div><div class="card-title">🏝️ SAii Laguna Phuket</div><div class="card-sub">ימים 1–5 · 5–10 יולי · 5 לילות</div></div>
+    <span class="badge" style="background:#e8f0fe;color:#1a4fa0">פתיחה</span>
+  </div>
+  <div class="card-body" style="margin-top:8px">חוף Bangtao, פוקט — נקודת הפתיחה. מלון לגונה עם בריכה אינסוף, חוף פרטי ומרכז ספורט. ממש ליד Boat Avenue לאוכל ו-Porto de Phuket לקניות.<br><br>ימי הפתיחה בנויים להנות מהמלון עם יום פארק מים (Andamanda), יום קניות, וג'ט סקי לרותם והבנים. <strong>שקוד מתחיל שיעורי גלישה כאן</strong> — Bangtao Beach הוא אחד המקומות הטובים בתאילנד למתחילים.</div>
+  <div class="link-row" style="margin-top:8px">
+    <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+    <a href="https://maps.google.com/?q=SAii+Laguna+Phuket+Bangtao" class="link-btn link-maps">📍 Maps</a>
+  </div>
+</div>
+
+<div class="card" style="border-right:4px solid #7e22ce;margin-bottom:10px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <div><div class="card-title">🌊 Anantara Koh Yao Yai</div><div class="card-sub">ימים 6–9 · 10–13 יולי · 3 לילות</div></div>
+    <span class="badge" style="background:#fdf4ff;color:#7e22ce">הג'ם</span>
+  </div>
+  <div class="card-body" style="margin-top:8px">אי מבודד במפרץ פאנג נגה — הכי "מנותק מהעולם" מבין שלושת היעדים. שקט מוחלט, צוקי גיר, שקיעות מיתולוגיות. הגעה ועזיבה בספידבוט.<br><br><strong>יום ג'יימס בונד</strong> — יום שלם על הים במפרץ פאנג נגה. <strong>יום טרקטורונים</strong> ביערות וקוקוסים של האי. ערב אחד ב-Baan Rim Nam — מסעדה על המים.</div>
+  <div class="link-row" style="margin-top:8px">
+    <button onclick="openModal('anantara')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+    <a href="https://maps.google.com/?q=Anantara+Koh+Yao+Yai+Resort" class="link-btn link-maps">📍 Maps</a>
+  </div>
+</div>
+
+<div class="card" style="border-right:4px solid #166534;margin-bottom:16px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <div><div class="card-title">🌿 Avani Plus Khao Lak</div><div class="card-sub">ימים 10–14 · 13–18 יולי · 5 לילות</div></div>
+    <span class="badge" style="background:#e8faf0;color:#166534">פינאלה</span>
+  </div>
+  <div class="card-body" style="margin-top:8px">פוקט הצפוני, חוף Bang Sak — המלון הכי פמילי מבין השלושה. פארק מים, קיר טיפוס, סקייט פארק, 4 בריכות, AvaniKids club. <strong>"מלון שאפשר לבלות בו שבוע ולא לצאת"</strong> — TripAdvisor.<br><br><strong>יום שלם ב-Khao Sok</strong> — שמורת גשם עם צוקי גיר ובונגלוס צפים על אגם. <strong>יום ים מ-Tublamu Pier.</strong> שקוד ממשיך לגלוש בגלים גדולים יותר ב-Memories Beach.</div>
+  <div class="link-row" style="margin-top:8px">
+    <button onclick="openModal('avani')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+    <a href="https://maps.google.com/?q=Avani+Plus+Khao+Lak+Resort" class="link-btn link-maps">📍 Maps</a>
+  </div>
+</div>
+
+<div class="section-label">📱 איך עובדים עם המדריך</div>
+
+<div class="card">
+  <div class="card-body" style="line-height:1.9">
+    <strong>לפני הטיול</strong> — עברו על כל יום ותכנונו. קראו את הטאב "מחר" כל ערב להתכוננות ליום הבא.<br><br>
+    <strong>בכל יום יש 7–8 טאבים:</strong>
+  </div>
+  <div style="margin-top:10px">
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">לוז היום</span>
+      <span style="font-size:12px;color:#555">הלוז המוצע עם שעות, טיפים ולינקים לניווט</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">אוכל</span>
+      <span style="font-size:12px;color:#555">המלצות לבוקר/צהריים/ערב · 4 קטגוריות: 🍜 וייטנמי, 🇹🇭 תאילנדי, 🍛 הודי, 🍣 יפני</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">לוגיסטיקה</span>
+      <span style="font-size:12px;color:#555">פרטי הזמנה, מלון, העברות, מחירים, טלפונים</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">מחר</span>
+      <span style="font-size:12px;color:#555">מה מחכה ביום הבא + checklist הכנה לערב</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">🏪 7-Eleven</span>
+      <span style="font-size:12px;color:#555">הסניפים הקרובים ביותר למלון עם ניווט</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">💡 אופציונלי</span>
+      <span style="font-size:12px;color:#555">שנורקלינג, חופים מומלצים, פעילויות לפי בחירה</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">💆 מסאז'</span>
+      <span style="font-size:12px;color:#555">מקומות מומלצים קרובים למלון עם ביקורות ומחירים</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-top:1px solid #f0f0ec">
+      <span style="font-size:13px;min-width:90px;color:#1a6ef5;font-weight:600">🏄 גלישה</span>
+      <span style="font-size:12px;color:#555">זמין בפוקט ו-Khao Lak — שיעורים, מקומות ומחירים לשקוד</span>
+    </div>
+  </div>
+</div>
+
+<div class="tip-box tip-blue" style="margin-top:4px">💡 המדריך מתעדכן — כשיש שינוי בתוכנית, הלינק מתעדכן אוטומטית לכולם.</div>
+```
+
+  </div>
+</div>
+
+<div id="day-1" class="day-page">
   <div class="header">
     <div class="trip-label">תאילנד 2026 · SAii Laguna Phuket</div>
     <div class="day-title">יום 1 — ראשון, 5 יולי</div>
@@ -2842,6 +2947,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('10-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('10-optional',this)">💡 אופציונלי</button>
     <button class="tab" onclick="showTab('10-massage',this)">💆 מסאז'</button>
+    <button class="tab" onclick="showTab('10-surf',this)">🏄 גלישה</button>
   </div>
   <div class="content">
     <div id="tab-10-schedule" class="tab-panel active">
@@ -3019,6 +3125,38 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <div class="card-body">מסאז' ישירות על החוף מחוץ למלון — ~300-400 באט לשעה. לשאול בפרונט המלון. אחת החוויות הטובות ביותר — מסאז' תאילנדי עם רגליים בחול.</div>
   </div>
 </div>
+
+<div id="tab-10-surf" class="tab-panel">
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;font-weight:600;color:#0369a1;margin-bottom:4px">🏄 גלישה ב-Khao Lak — עונה מושלמת</div>
+    <div style="font-size:12px;color:#0369a1;line-height:1.6">יולי = עונת המונסון = גלים מצוינים ל-Khao Lak. הגלים דווקא גדלים בקיץ. שקוד יוכל להמשיך את מה שהתחיל בפוקט.</div>
+  </div>
+  <div class="section-label">📍 איפה גולשים</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Memories Beach · Khao Lak</div><div class="card-sub">~20 דקות מ-Avani · החוף הכי טוב לגלישה</div></div><span class="badge badge-warn">TOP SPOT</span></div>
+    <div class="card-body" style="margin-top:6px">החוף הטוב ביותר לגלישה באזור — גלי beach break עקביים, מתאים למתחילים ומתקדמים. Better Surf Thailand פועלים כאן — המדריכים המובילים.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להזמין מראש — הכיתות מתמלאות מהר ביולי</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Memories+Beach+Khao+Lak+Thailand" class="link-btn link-maps">📍 Memories Beach</a><a href="https://www.facebook.com/BetterSurfThailand" target="_blank" class="link-btn link-web">🌐 Better Surf</a></div>
+  </div>
+  <div class="section-label">🏫 שיעורים · Better Surf Thailand</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור קבוצתי</div><div class="card-sub">30 דק' על החוף + שעה במים</div></div><span class="badge badge-warn">1,200 באט</span></div>
+    <div class="card-body" style="margin-top:6px">מדריכים דוברי אנגלית. המדריך נכנס למים ועוזר לדחוף לגלים. מתאים לשקוד לאחר שיעורים בפוקט — יתקדם מהר.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור פרטי</div><div class="card-sub">מומלץ לשקוד אחרי פוקט</div></div><span class="badge badge-warn">~2,000 באט</span></div>
+    <div class="card-body" style="margin-top:6px">אחרי כמה שיעורים בפוקט, שיעור פרטי ב-Khao Lak יעזור לשקוד לקחת גלים לבד.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">השכרת גלשן · Pakarang Surf Shop</div><div class="card-sub">Memories Beach</div></div><span class="badge badge-warn">500 באט/יום</span></div>
+    <div class="card-body" style="margin-top:6px">לונגבורד / שורטבורד: 500 באט ליום · SUP: ~700 באט · Bodyboard: ~300 באט</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pakarang+Surf+Shop+Khao+Lak" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="section-label">📅 מתי הכי נכון לשלב?</div>
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;color:#0369a1;line-height:1.8"><strong>יום 10 (שלישי)</strong> — בוקר גלישה לפני יום מלון<br><strong>יום 12 (חמישי)</strong> — אחרי ים ו-Khao Sok<br><strong>יום 13 (שישי)</strong> — גלישה בוקר + שוק לילה ערב<br><strong>טיפ:</strong> Bolt/Grab ל-Memories Beach ~20 דק' · ~150 באט</div>
+  </div>
+</div>
 ```
 
   </div>
@@ -3044,6 +3182,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('11-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('11-optional',this)">💡 אופציונלי</button>
     <button class="tab" onclick="showTab('11-massage',this)">💆 מסאז'</button>
+    <button class="tab" onclick="showTab('11-surf',this)">🏄 גלישה</button>
   </div>
   <div class="content">
     <div id="tab-11-schedule" class="tab-panel active">
@@ -3232,6 +3371,38 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <div class="card-body">מסאז' ישירות על החוף מחוץ למלון — ~300-400 באט לשעה. לשאול בפרונט המלון. אחת החוויות הטובות ביותר — מסאז' תאילנדי עם רגליים בחול.</div>
   </div>
 </div>
+
+<div id="tab-11-surf" class="tab-panel">
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;font-weight:600;color:#0369a1;margin-bottom:4px">🏄 גלישה ב-Khao Lak — עונה מושלמת</div>
+    <div style="font-size:12px;color:#0369a1;line-height:1.6">יולי = עונת המונסון = גלים מצוינים ל-Khao Lak. הגלים דווקא גדלים בקיץ. שקוד יוכל להמשיך את מה שהתחיל בפוקט.</div>
+  </div>
+  <div class="section-label">📍 איפה גולשים</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Memories Beach · Khao Lak</div><div class="card-sub">~20 דקות מ-Avani · החוף הכי טוב לגלישה</div></div><span class="badge badge-warn">TOP SPOT</span></div>
+    <div class="card-body" style="margin-top:6px">החוף הטוב ביותר לגלישה באזור — גלי beach break עקביים, מתאים למתחילים ומתקדמים. Better Surf Thailand פועלים כאן — המדריכים המובילים.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להזמין מראש — הכיתות מתמלאות מהר ביולי</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Memories+Beach+Khao+Lak+Thailand" class="link-btn link-maps">📍 Memories Beach</a><a href="https://www.facebook.com/BetterSurfThailand" target="_blank" class="link-btn link-web">🌐 Better Surf</a></div>
+  </div>
+  <div class="section-label">🏫 שיעורים · Better Surf Thailand</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור קבוצתי</div><div class="card-sub">30 דק' על החוף + שעה במים</div></div><span class="badge badge-warn">1,200 באט</span></div>
+    <div class="card-body" style="margin-top:6px">מדריכים דוברי אנגלית. המדריך נכנס למים ועוזר לדחוף לגלים. מתאים לשקוד לאחר שיעורים בפוקט — יתקדם מהר.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור פרטי</div><div class="card-sub">מומלץ לשקוד אחרי פוקט</div></div><span class="badge badge-warn">~2,000 באט</span></div>
+    <div class="card-body" style="margin-top:6px">אחרי כמה שיעורים בפוקט, שיעור פרטי ב-Khao Lak יעזור לשקוד לקחת גלים לבד.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">השכרת גלשן · Pakarang Surf Shop</div><div class="card-sub">Memories Beach</div></div><span class="badge badge-warn">500 באט/יום</span></div>
+    <div class="card-body" style="margin-top:6px">לונגבורד / שורטבורד: 500 באט ליום · SUP: ~700 באט · Bodyboard: ~300 באט</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pakarang+Surf+Shop+Khao+Lak" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="section-label">📅 מתי הכי נכון לשלב?</div>
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;color:#0369a1;line-height:1.8"><strong>יום 10 (שלישי)</strong> — בוקר גלישה לפני יום מלון<br><strong>יום 12 (חמישי)</strong> — אחרי ים ו-Khao Sok<br><strong>יום 13 (שישי)</strong> — גלישה בוקר + שוק לילה ערב<br><strong>טיפ:</strong> Bolt/Grab ל-Memories Beach ~20 דק' · ~150 באט</div>
+  </div>
+</div>
 ```
 
   </div>
@@ -3257,6 +3428,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('12-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('12-optional',this)">💡 אופציונלי</button>
     <button class="tab" onclick="showTab('12-massage',this)">💆 מסאז'</button>
+    <button class="tab" onclick="showTab('12-surf',this)">🏄 גלישה</button>
   </div>
   <div class="content">
     <div id="tab-12-schedule" class="tab-panel active">
@@ -3431,6 +3603,38 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <div class="card-body">מסאז' ישירות על החוף מחוץ למלון — ~300-400 באט לשעה. לשאול בפרונט המלון. אחת החוויות הטובות ביותר — מסאז' תאילנדי עם רגליים בחול.</div>
   </div>
 </div>
+
+<div id="tab-12-surf" class="tab-panel">
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;font-weight:600;color:#0369a1;margin-bottom:4px">🏄 גלישה ב-Khao Lak — עונה מושלמת</div>
+    <div style="font-size:12px;color:#0369a1;line-height:1.6">יולי = עונת המונסון = גלים מצוינים ל-Khao Lak. הגלים דווקא גדלים בקיץ. שקוד יוכל להמשיך את מה שהתחיל בפוקט.</div>
+  </div>
+  <div class="section-label">📍 איפה גולשים</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Memories Beach · Khao Lak</div><div class="card-sub">~20 דקות מ-Avani · החוף הכי טוב לגלישה</div></div><span class="badge badge-warn">TOP SPOT</span></div>
+    <div class="card-body" style="margin-top:6px">החוף הטוב ביותר לגלישה באזור — גלי beach break עקביים, מתאים למתחילים ומתקדמים. Better Surf Thailand פועלים כאן — המדריכים המובילים.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להזמין מראש — הכיתות מתמלאות מהר ביולי</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Memories+Beach+Khao+Lak+Thailand" class="link-btn link-maps">📍 Memories Beach</a><a href="https://www.facebook.com/BetterSurfThailand" target="_blank" class="link-btn link-web">🌐 Better Surf</a></div>
+  </div>
+  <div class="section-label">🏫 שיעורים · Better Surf Thailand</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור קבוצתי</div><div class="card-sub">30 דק' על החוף + שעה במים</div></div><span class="badge badge-warn">1,200 באט</span></div>
+    <div class="card-body" style="margin-top:6px">מדריכים דוברי אנגלית. המדריך נכנס למים ועוזר לדחוף לגלים. מתאים לשקוד לאחר שיעורים בפוקט — יתקדם מהר.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור פרטי</div><div class="card-sub">מומלץ לשקוד אחרי פוקט</div></div><span class="badge badge-warn">~2,000 באט</span></div>
+    <div class="card-body" style="margin-top:6px">אחרי כמה שיעורים בפוקט, שיעור פרטי ב-Khao Lak יעזור לשקוד לקחת גלים לבד.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">השכרת גלשן · Pakarang Surf Shop</div><div class="card-sub">Memories Beach</div></div><span class="badge badge-warn">500 באט/יום</span></div>
+    <div class="card-body" style="margin-top:6px">לונגבורד / שורטבורד: 500 באט ליום · SUP: ~700 באט · Bodyboard: ~300 באט</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pakarang+Surf+Shop+Khao+Lak" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="section-label">📅 מתי הכי נכון לשלב?</div>
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;color:#0369a1;line-height:1.8"><strong>יום 10 (שלישי)</strong> — בוקר גלישה לפני יום מלון<br><strong>יום 12 (חמישי)</strong> — אחרי ים ו-Khao Sok<br><strong>יום 13 (שישי)</strong> — גלישה בוקר + שוק לילה ערב<br><strong>טיפ:</strong> Bolt/Grab ל-Memories Beach ~20 דק' · ~150 באט</div>
+  </div>
+</div>
 ```
 
   </div>
@@ -3456,6 +3660,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('13-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('13-optional',this)">💡 אופציונלי</button>
     <button class="tab" onclick="showTab('13-massage',this)">💆 מסאז'</button>
+    <button class="tab" onclick="showTab('13-surf',this)">🏄 גלישה</button>
   </div>
   <div class="content">
     <div id="tab-13-schedule" class="tab-panel active">
@@ -3629,6 +3834,38 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <div class="card-body">מסאז' ישירות על החוף מחוץ למלון — ~300-400 באט לשעה. לשאול בפרונט המלון. אחת החוויות הטובות ביותר — מסאז' תאילנדי עם רגליים בחול.</div>
   </div>
 </div>
+
+<div id="tab-13-surf" class="tab-panel">
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;font-weight:600;color:#0369a1;margin-bottom:4px">🏄 גלישה ב-Khao Lak — עונה מושלמת</div>
+    <div style="font-size:12px;color:#0369a1;line-height:1.6">יולי = עונת המונסון = גלים מצוינים ל-Khao Lak. הגלים דווקא גדלים בקיץ. שקוד יוכל להמשיך את מה שהתחיל בפוקט.</div>
+  </div>
+  <div class="section-label">📍 איפה גולשים</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Memories Beach · Khao Lak</div><div class="card-sub">~20 דקות מ-Avani · החוף הכי טוב לגלישה</div></div><span class="badge badge-warn">TOP SPOT</span></div>
+    <div class="card-body" style="margin-top:6px">החוף הטוב ביותר לגלישה באזור — גלי beach break עקביים, מתאים למתחילים ומתקדמים. Better Surf Thailand פועלים כאן — המדריכים המובילים.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להזמין מראש — הכיתות מתמלאות מהר ביולי</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Memories+Beach+Khao+Lak+Thailand" class="link-btn link-maps">📍 Memories Beach</a><a href="https://www.facebook.com/BetterSurfThailand" target="_blank" class="link-btn link-web">🌐 Better Surf</a></div>
+  </div>
+  <div class="section-label">🏫 שיעורים · Better Surf Thailand</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור קבוצתי</div><div class="card-sub">30 דק' על החוף + שעה במים</div></div><span class="badge badge-warn">1,200 באט</span></div>
+    <div class="card-body" style="margin-top:6px">מדריכים דוברי אנגלית. המדריך נכנס למים ועוזר לדחוף לגלים. מתאים לשקוד לאחר שיעורים בפוקט — יתקדם מהר.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור פרטי</div><div class="card-sub">מומלץ לשקוד אחרי פוקט</div></div><span class="badge badge-warn">~2,000 באט</span></div>
+    <div class="card-body" style="margin-top:6px">אחרי כמה שיעורים בפוקט, שיעור פרטי ב-Khao Lak יעזור לשקוד לקחת גלים לבד.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">השכרת גלשן · Pakarang Surf Shop</div><div class="card-sub">Memories Beach</div></div><span class="badge badge-warn">500 באט/יום</span></div>
+    <div class="card-body" style="margin-top:6px">לונגבורד / שורטבורד: 500 באט ליום · SUP: ~700 באט · Bodyboard: ~300 באט</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pakarang+Surf+Shop+Khao+Lak" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="section-label">📅 מתי הכי נכון לשלב?</div>
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;color:#0369a1;line-height:1.8"><strong>יום 10 (שלישי)</strong> — בוקר גלישה לפני יום מלון<br><strong>יום 12 (חמישי)</strong> — אחרי ים ו-Khao Sok<br><strong>יום 13 (שישי)</strong> — גלישה בוקר + שוק לילה ערב<br><strong>טיפ:</strong> Bolt/Grab ל-Memories Beach ~20 דק' · ~150 באט</div>
+  </div>
+</div>
 ```
 
   </div>
@@ -3654,6 +3891,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('14-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('14-optional',this)">💡 אופציונלי</button>
     <button class="tab" onclick="showTab('14-massage',this)">💆 מסאז'</button>
+    <button class="tab" onclick="showTab('14-surf',this)">🏄 גלישה</button>
   </div>
   <div class="content">
     <div id="tab-14-schedule" class="tab-panel active">
@@ -3830,6 +4068,38 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <div class="card-body">מסאז' ישירות על החוף מחוץ למלון — ~300-400 באט לשעה. לשאול בפרונט המלון. אחת החוויות הטובות ביותר — מסאז' תאילנדי עם רגליים בחול.</div>
   </div>
 </div>
+
+<div id="tab-14-surf" class="tab-panel">
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;font-weight:600;color:#0369a1;margin-bottom:4px">🏄 גלישה ב-Khao Lak — עונה מושלמת</div>
+    <div style="font-size:12px;color:#0369a1;line-height:1.6">יולי = עונת המונסון = גלים מצוינים ל-Khao Lak. הגלים דווקא גדלים בקיץ. שקוד יוכל להמשיך את מה שהתחיל בפוקט.</div>
+  </div>
+  <div class="section-label">📍 איפה גולשים</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Memories Beach · Khao Lak</div><div class="card-sub">~20 דקות מ-Avani · החוף הכי טוב לגלישה</div></div><span class="badge badge-warn">TOP SPOT</span></div>
+    <div class="card-body" style="margin-top:6px">החוף הטוב ביותר לגלישה באזור — גלי beach break עקביים, מתאים למתחילים ומתקדמים. Better Surf Thailand פועלים כאן — המדריכים המובילים.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להזמין מראש — הכיתות מתמלאות מהר ביולי</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Memories+Beach+Khao+Lak+Thailand" class="link-btn link-maps">📍 Memories Beach</a><a href="https://www.facebook.com/BetterSurfThailand" target="_blank" class="link-btn link-web">🌐 Better Surf</a></div>
+  </div>
+  <div class="section-label">🏫 שיעורים · Better Surf Thailand</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור קבוצתי</div><div class="card-sub">30 דק' על החוף + שעה במים</div></div><span class="badge badge-warn">1,200 באט</span></div>
+    <div class="card-body" style="margin-top:6px">מדריכים דוברי אנגלית. המדריך נכנס למים ועוזר לדחוף לגלים. מתאים לשקוד לאחר שיעורים בפוקט — יתקדם מהר.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">שיעור פרטי</div><div class="card-sub">מומלץ לשקוד אחרי פוקט</div></div><span class="badge badge-warn">~2,000 באט</span></div>
+    <div class="card-body" style="margin-top:6px">אחרי כמה שיעורים בפוקט, שיעור פרטי ב-Khao Lak יעזור לשקוד לקחת גלים לבד.</div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">השכרת גלשן · Pakarang Surf Shop</div><div class="card-sub">Memories Beach</div></div><span class="badge badge-warn">500 באט/יום</span></div>
+    <div class="card-body" style="margin-top:6px">לונגבורד / שורטבורד: 500 באט ליום · SUP: ~700 באט · Bodyboard: ~300 באט</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pakarang+Surf+Shop+Khao+Lak" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="section-label">📅 מתי הכי נכון לשלב?</div>
+  <div class="card" style="background:#e0f2fe;border-color:#7dd3fc">
+    <div style="font-size:12px;color:#0369a1;line-height:1.8"><strong>יום 10 (שלישי)</strong> — בוקר גלישה לפני יום מלון<br><strong>יום 12 (חמישי)</strong> — אחרי ים ו-Khao Sok<br><strong>יום 13 (שישי)</strong> — גלישה בוקר + שוק לילה ערב<br><strong>טיפ:</strong> Bolt/Grab ל-Memories Beach ~20 דק' · ~150 באט</div>
+  </div>
+</div>
 ```
 
   </div>
@@ -3843,6 +4113,21 @@ function showDay(n, el) {
   el.classList.add('active');
   window.scrollTo(0, 0);
 }
+
+function autoSelectDay() {
+  var today = new Date();
+  var tripStart = new Date('2026-07-05');
+  var tripEnd = new Date('2026-07-18');
+  var diffMs = today - tripStart;
+  var diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  var targetDay = 0; // default: intro
+  if (diffDays >= 0 && diffDays <= 13) {
+    targetDay = diffDays + 1; // days 1-14
+  }
+  var btn = document.querySelectorAll('.day-btn')[targetDay];
+  if (btn) btn.click();
+}
+window.addEventListener('DOMContentLoaded', autoSelectDay);
 function showTab(id, el) {
   const dayPage = el.closest('.day-page');
   dayPage.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
