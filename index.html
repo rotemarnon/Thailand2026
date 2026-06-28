@@ -285,6 +285,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('1-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('1-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('1-optional',this)">💡 אופציונלי</button>
+    <button class="tab" onclick="showTab('1-massage',this)">💆 מסאז'</button>
   </div>
   <div class="content">
     <div id="tab-1-schedule" class="tab-panel active">
@@ -449,78 +450,94 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
       </div>
       <div class="tip-box tip-blue" style="margin-top:12px">💡 SIM card תאילנדי: 200 באט / 15 ימים. קרם הגנה, מים, קפה — הכל זול יותר מהמלון.</div>
     </div>
-  </div>
 
 ```
 <div id="tab-1-optional" class="tab-panel">
-  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
-
+  <div class="section-label">🐠 שנורקלינג מומלץ מפוקט</div>
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
-        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
-      </div>
-      <span class="badge badge-warn">30 דקות</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Koh Waeo · הכי קרוב</div><div class="card-sub">longtail קצר מחוף Bangtao</div></div><span class="badge badge-warn">30 דקות</span></div>
+    <div class="card-body" style="margin-top:6px">אי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם ספונטני.</div>
     <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
-        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">חצי יום</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
-    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Coral Island · קלאסי למשפחות</div><div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים צבעוניות. לחוף האחורי (back side) — פחות עמוס ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות מ-Bangtao ל-Chalong Pier</div>
     <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
-        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">יום שלם</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
-    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Racha Yai Island · הכי יפה</div><div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">יום שלם</span></div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר ליד פוקט — מים שקופים, שוניות עשירות. אפשר לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ להזמין דרך GetYourGuide עם איסוף מהמלון — כולל ציוד וארוחת צהריים</div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
-        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
-      </div>
-      <span class="badge badge-warn">חצי-יום מלא</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
-    <div class="pill-row">
-      <span class="pill">מתאים לכל הגילאים</span>
-      <span class="pill">ציוד כלול בדרך כלל</span>
-      <span class="pill">~1,200-1,800 באט לאיש</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Khai Islands · מושלם לקבוצה גדולה</div><div class="card-sub">~30 דקות ספידבוט · איסוף מ-Bangtao</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים, מים שקטים, שוניות רדודות — מושלם לילדים ומשפחות. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row"><span class="pill">מתאים לכל הגילאים</span><span class="pill">ציוד כלול</span><span class="pill">~1,200-1,800 באט לאיש</span></div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
-  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px;margin-bottom:16px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="section-label">🏖️ חופים מומלצים בסביבה</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Freedom Beach · חוף טרופי בתולי</div><div class="card-sub">~35 דקות מ-Bangtao · דרום פוקט</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">חוף ציורי, טרופי ושקט עם צמחייה עשירה. מים ירוקים צלולים, חול לבן. מסעדה בחוף. אפשר לשלב עם Paradise Beach באותו יום.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 להגיע בבוקר לפני שמגיעות סירות מבקרים. 5 דקות ברכב מ-Patong.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Freedom+Beach+Patong+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Paradise Beach · אחד היפים בתאילנד</div><div class="card-sub">~35 דקות מ-Bangtao · 8 ק"מ מפאטונג</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">אחד החופים האקזוטיים ביותר בתאילנד — חול לבן, מים צלולים, הרים ירוקים מסביב. הרבה פחות תיירים מפאטונג. מסעדה בחוף.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ לשלב עם Freedom Beach — שניהם ביום אחד. Bolt/Grab ל-Patong ומשם longtail לחופים.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Paradise+Beach+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card" style="background:#e8f0fe;border-color:#c5d5f8">
+    <div style="font-size:12px;font-weight:600;color:#1a4fa0;margin-bottom:6px">📅 מתי הכי נכון לשלב?</div>
+    <div style="font-size:12px;color:#1a4fa0;line-height:1.7"><strong>יום 3 (שלישי)</strong> — אחה"צ אחרי ג'ט סקי ועיסוי<br><strong>יום 4 (רביעי)</strong> — בבוקר לפני קניות<br><strong>יום 5 (חמישי)</strong> — פחות מומלץ · יש ספידבוט ב-13:00</div>
+  </div>
+</div>
+<div id="tab-1-massage" class="tab-panel">
+  <div class="card" style="background:#fdf4ff;border-color:#e9d5ff">
+    <div style="font-size:12px;font-weight:600;color:#7e22ce;margin-bottom:4px">💡 טיפ כללי</div>
+    <div style="font-size:12px;color:#6b21a8;line-height:1.6">מסאז' בתאילנד = 300–600 באט לשעה (~30–60 ₪). תמיד לשריין מראש, במיוחד לשני אנשים ביחד.</div>
+  </div>
+  <div class="section-label">במלון · הכי נוח ומפנק</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">SAii Spa · במלון עצמו</div><div class="card-sub">⭐ 5.0 (162 ביקורות) · 10:00–22:00</div></div><span class="badge" style="background:#fdf4ff;color:#7e22ce">פרימיום</span></div>
+    <div class="card-body" style="margin-top:6px">"מעל לציפיות — חוויה מושלמת מהרגע הראשון." ספא יוקרתי בתוך המלון, אווירה מדהימה. לשריין בצ'ק-אין.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=SAii+Spa+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a></div>
+  </div>
+  <div class="section-label">מקומיים מומלצים · 5–10 דקות מהמלון</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Sabai Massage</div><div class="card-sub">⭐ 4.7 (245 ביקורות) · 10:00–23:00</div></div><span class="badge badge-warn">מומלץ ביותר</span></div>
+    <div class="card-body" style="margin-top:6px">"אחד המסאז'ים הטובים ביותר שחוויתי בחיי." לבקש Milli, Joy או Patty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Sport massage</span><span class="pill">Deep tissue</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Sabai+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66950917847" class="link-btn link-phone">📞 +66 95 091 7847</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Carnation</div><div class="card-sub">⭐ 4.4 (160 ביקורות) · 11:00–22:00</div></div><span class="badge badge-warn">הכי קרוב</span></div>
+    <div class="card-body" style="margin-top:6px">"הייתי כאן 10 שנים ברציפות — המקום הטוב ביותר." ממש ליד Laguna Rd. יש shuttle חינמי. ~600 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Oil massage</span><span class="pill">Shuttle חינמי</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Carnation+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676325565" class="link-btn link-phone">📞 076 325 565</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Tookta Massage Bangtao</div><div class="card-sub">⭐ 4.5 · 09:00–23:00</div></div><span class="badge badge-warn">ליד 7-Eleven</span></div>
+    <div class="card-body" style="margin-top:6px">"המסאז' הטוב ביותר בפוקט." קרוב ל-7-Eleven של Bangtao. גם מניקור/פדיקור. לבקש Kitty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Foot massage</span><span class="pill">Manicure/Pedicure</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Tookta+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66636350340" class="link-btn link-phone">📞 +66 63 635 0340</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Pam Relax Massage</div><div class="card-sub">⭐ 4.5 (163 ביקורות) · 09:30–23:00</div></div><span class="badge badge-warn">ספורטיבי</span></div>
+    <div class="card-body" style="margin-top:6px">"300-500 באט ואלו המסאז'ים הטובים שחוויתי בחיי." מתמחים ב-sports massage ו-deep tissue. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Sports massage</span><span class="pill">Deep tissue</span><span class="pill">Foot massage</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pam+Relax+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66813898436" class="link-btn link-phone">📞 +66 81 389 8436</a></div>
+  </div>
+  <div class="tip-box tip-blue" style="margin-top:4px">💡 לשריין יום קודם — במיוחד אם רוצים שני אנשים ביחד. לציין עוצמה: light / medium / strong.</div>
 </div>
 ```
 
+  </div>
 </div>
-
-<!-- ======= יום 2 ======= -->
 
 <div id="day-2" class="day-page">
   <div class="header">
@@ -539,6 +556,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('2-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('2-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('2-optional',this)">💡 אופציונלי</button>
+    <button class="tab" onclick="showTab('2-massage',this)">💆 מסאז'</button>
   </div>
   <div class="content">
     <div id="tab-2-schedule" class="tab-panel active">
@@ -663,78 +681,94 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
       </div>
       <div class="tip-box tip-blue" style="margin-top:12px">💡 לקנות מים ונשנושים לפני הכניסה לפארק — בפנים הכל יקר יותר.</div>
     </div>
-  </div>
 
 ```
 <div id="tab-2-optional" class="tab-panel">
-  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
-
+  <div class="section-label">🐠 שנורקלינג מומלץ מפוקט</div>
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
-        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
-      </div>
-      <span class="badge badge-warn">30 דקות</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Koh Waeo · הכי קרוב</div><div class="card-sub">longtail קצר מחוף Bangtao</div></div><span class="badge badge-warn">30 דקות</span></div>
+    <div class="card-body" style="margin-top:6px">אי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם ספונטני.</div>
     <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
-        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">חצי יום</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
-    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Coral Island · קלאסי למשפחות</div><div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים צבעוניות. לחוף האחורי (back side) — פחות עמוס ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות מ-Bangtao ל-Chalong Pier</div>
     <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
-        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">יום שלם</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
-    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Racha Yai Island · הכי יפה</div><div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">יום שלם</span></div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר ליד פוקט — מים שקופים, שוניות עשירות. אפשר לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ להזמין דרך GetYourGuide עם איסוף מהמלון — כולל ציוד וארוחת צהריים</div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
-        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
-      </div>
-      <span class="badge badge-warn">חצי-יום מלא</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
-    <div class="pill-row">
-      <span class="pill">מתאים לכל הגילאים</span>
-      <span class="pill">ציוד כלול בדרך כלל</span>
-      <span class="pill">~1,200-1,800 באט לאיש</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Khai Islands · מושלם לקבוצה גדולה</div><div class="card-sub">~30 דקות ספידבוט · איסוף מ-Bangtao</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים, מים שקטים, שוניות רדודות — מושלם לילדים ומשפחות. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row"><span class="pill">מתאים לכל הגילאים</span><span class="pill">ציוד כלול</span><span class="pill">~1,200-1,800 באט לאיש</span></div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
-  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px;margin-bottom:16px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="section-label">🏖️ חופים מומלצים בסביבה</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Freedom Beach · חוף טרופי בתולי</div><div class="card-sub">~35 דקות מ-Bangtao · דרום פוקט</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">חוף ציורי, טרופי ושקט עם צמחייה עשירה. מים ירוקים צלולים, חול לבן. מסעדה בחוף. אפשר לשלב עם Paradise Beach באותו יום.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 להגיע בבוקר לפני שמגיעות סירות מבקרים. 5 דקות ברכב מ-Patong.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Freedom+Beach+Patong+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Paradise Beach · אחד היפים בתאילנד</div><div class="card-sub">~35 דקות מ-Bangtao · 8 ק"מ מפאטונג</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">אחד החופים האקזוטיים ביותר בתאילנד — חול לבן, מים צלולים, הרים ירוקים מסביב. הרבה פחות תיירים מפאטונג. מסעדה בחוף.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ לשלב עם Freedom Beach — שניהם ביום אחד. Bolt/Grab ל-Patong ומשם longtail לחופים.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Paradise+Beach+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card" style="background:#e8f0fe;border-color:#c5d5f8">
+    <div style="font-size:12px;font-weight:600;color:#1a4fa0;margin-bottom:6px">📅 מתי הכי נכון לשלב?</div>
+    <div style="font-size:12px;color:#1a4fa0;line-height:1.7"><strong>יום 3 (שלישי)</strong> — אחה"צ אחרי ג'ט סקי ועיסוי<br><strong>יום 4 (רביעי)</strong> — בבוקר לפני קניות<br><strong>יום 5 (חמישי)</strong> — פחות מומלץ · יש ספידבוט ב-13:00</div>
+  </div>
+</div>
+<div id="tab-2-massage" class="tab-panel">
+  <div class="card" style="background:#fdf4ff;border-color:#e9d5ff">
+    <div style="font-size:12px;font-weight:600;color:#7e22ce;margin-bottom:4px">💡 טיפ כללי</div>
+    <div style="font-size:12px;color:#6b21a8;line-height:1.6">מסאז' בתאילנד = 300–600 באט לשעה (~30–60 ₪). תמיד לשריין מראש, במיוחד לשני אנשים ביחד.</div>
+  </div>
+  <div class="section-label">במלון · הכי נוח ומפנק</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">SAii Spa · במלון עצמו</div><div class="card-sub">⭐ 5.0 (162 ביקורות) · 10:00–22:00</div></div><span class="badge" style="background:#fdf4ff;color:#7e22ce">פרימיום</span></div>
+    <div class="card-body" style="margin-top:6px">"מעל לציפיות — חוויה מושלמת מהרגע הראשון." ספא יוקרתי בתוך המלון, אווירה מדהימה. לשריין בצ'ק-אין.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=SAii+Spa+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a></div>
+  </div>
+  <div class="section-label">מקומיים מומלצים · 5–10 דקות מהמלון</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Sabai Massage</div><div class="card-sub">⭐ 4.7 (245 ביקורות) · 10:00–23:00</div></div><span class="badge badge-warn">מומלץ ביותר</span></div>
+    <div class="card-body" style="margin-top:6px">"אחד המסאז'ים הטובים ביותר שחוויתי בחיי." לבקש Milli, Joy או Patty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Sport massage</span><span class="pill">Deep tissue</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Sabai+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66950917847" class="link-btn link-phone">📞 +66 95 091 7847</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Carnation</div><div class="card-sub">⭐ 4.4 (160 ביקורות) · 11:00–22:00</div></div><span class="badge badge-warn">הכי קרוב</span></div>
+    <div class="card-body" style="margin-top:6px">"הייתי כאן 10 שנים ברציפות — המקום הטוב ביותר." ממש ליד Laguna Rd. יש shuttle חינמי. ~600 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Oil massage</span><span class="pill">Shuttle חינמי</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Carnation+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676325565" class="link-btn link-phone">📞 076 325 565</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Tookta Massage Bangtao</div><div class="card-sub">⭐ 4.5 · 09:00–23:00</div></div><span class="badge badge-warn">ליד 7-Eleven</span></div>
+    <div class="card-body" style="margin-top:6px">"המסאז' הטוב ביותר בפוקט." קרוב ל-7-Eleven של Bangtao. גם מניקור/פדיקור. לבקש Kitty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Foot massage</span><span class="pill">Manicure/Pedicure</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Tookta+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66636350340" class="link-btn link-phone">📞 +66 63 635 0340</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Pam Relax Massage</div><div class="card-sub">⭐ 4.5 (163 ביקורות) · 09:30–23:00</div></div><span class="badge badge-warn">ספורטיבי</span></div>
+    <div class="card-body" style="margin-top:6px">"300-500 באט ואלו המסאז'ים הטובים שחוויתי בחיי." מתמחים ב-sports massage ו-deep tissue. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Sports massage</span><span class="pill">Deep tissue</span><span class="pill">Foot massage</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pam+Relax+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66813898436" class="link-btn link-phone">📞 +66 81 389 8436</a></div>
+  </div>
+  <div class="tip-box tip-blue" style="margin-top:4px">💡 לשריין יום קודם — במיוחד אם רוצים שני אנשים ביחד. לציין עוצמה: light / medium / strong.</div>
 </div>
 ```
 
+  </div>
 </div>
-
-<!-- ======= יום 3 ======= -->
 
 <div id="day-3" class="day-page">
   <div class="header">
@@ -753,6 +787,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('3-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('3-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('3-optional',this)">💡 אופציונלי</button>
+    <button class="tab" onclick="showTab('3-massage',this)">💆 מסאז'</button>
   </div>
   <div class="content">
     <div id="tab-3-schedule" class="tab-panel active">
@@ -800,142 +835,175 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
           <div class="timeline-desc">כל אחד עושה מה שבא לו. שינה, בריכה, קריאה, שוטטות. אין לוח זמנים.</div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="time-icon" style="background:#e8faf0">🍜</div>
-        <div class="timeline-body">
-          <div class="timeline-time">19:00–21:00</div>
-          <div class="timeline-title">ארוחת ערב · Bampot Kitchen & Bar</div>
-          <div class="timeline-desc">מסעדה מומלצת באזור Laguna — אוכל תאילנדי-אסייתי ברמה גבוהה, אווירה נעימה, מרחק קצר מהמלון.</div>
-          <div class="link-row">
-            <a href="https://maps.google.com/?q=Bampot+Kitchen+Bar+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="tab-3-food" class="tab-panel">
-      <div class="section-label">אוכל היום</div>
-      <div class="food-grid">
-        <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">SAii Laguna</div><div class="food-loc">כלול · בלי מהירות</div></div>
-        <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">המלון / הבריכה</div><div class="food-loc">סנאק או ארוחה קלה</div></div>
-      </div>
-      <div class="card">
-        <div class="food-meal">ערב</div>
-        <div class="card-title" style="margin-top:4px">Bampot Kitchen & Bar</div>
-        <div class="card-sub">אזור Laguna · ~10 דקות מהמלון</div>
-        <div class="card-body" style="margin-top:6px">מסעדה אסייתית עם תפריט מגוון — מנות תאילנדיות, אסייתיות, ים. אווירה נעימה ולא יקרה מדי. מתאים לקבוצה גדולה.</div>
-        <div class="link-row"><a href="https://maps.google.com/?q=Bampot+Kitchen+Bar+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a></div>
-      </div>
-    </div>
-    <div id="tab-3-logistics" class="tab-panel">
-      <div class="section-label">המלון</div>
-      <div class="card">
-        <div class="card-title">SAii Laguna Phuket</div>
-        <div class="card-body">לילה 3 מתוך 5 · 5/7 → 10/7 · Bangtao Beach</div>
-        <div class="link-row">
-          <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
-          <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
-          <a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a>
-        </div>
-      </div>
-    </div>
-    <div id="tab-3-tomorrow" class="tab-panel">
-      <div class="section-label">מחר — רביעי 8 יולי</div>
-      <div class="card">
-        <div class="card-title">🛍️ יום קניות · Porto de Phuket + Central Phuket</div>
-        <div class="card-body">בוקר ב-Porto de Phuket (5 דקות מהמלון), צהריים ב-Boat Avenue, אחה"צ ב-Central Phuket Festival (הקניון הגדול). ערב — Boat Avenue שוב.</div>
-        <div class="link-row">
-          <a href="https://maps.google.com/?q=Porto+de+Phuket+Laguna" class="link-btn link-maps">📍 Porto Maps</a>
-          <a href="https://maps.google.com/?q=Central+Phuket+Festival" class="link-btn link-maps">📍 Central Maps</a>
-        </div>
-      </div>
-      <div class="section-label">להכין הלילה</div>
-      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להביא תיקים / מזוודה ריקה לקניות</span></div>
-      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>כסף מזומן / כרטיס אשראי בכיס</span></div>
-      <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להזמין Bolt/Grab ל-Central Phuket אחה"צ</span></div>
-    </div>
-    <div id="tab-3-711" class="tab-panel">
-      <div class="section-label">7-Eleven קרוב למלון</div>
-      <div class="seven-item">
-        <div class="seven-info"><div class="seven-name">7-Eleven · Laguna entrance</div><div class="seven-addr">Choeng Thale — הכי קרוב לכניסת לגונה</div><div class="seven-rating">⭐ 3.6 · פתוח 24 שעות · ATM</div></div>
-        <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="seven-link">📍 נווט</a>
-      </div>
-      <div class="seven-item">
-        <div class="seven-info"><div class="seven-name">7-Eleven · Bangtao (חדש)</div><div class="seven-addr">Choeng Thale — ליד Sunwing Hotel</div><div class="seven-rating">⭐ 5.0 · פתוח 24 שעות</div></div>
-        <a href="https://maps.google.com/?q=7-Eleven+Bangtao+Beach+Sunwing+Phuket" class="seven-link">📍 נווט</a>
+
+```
+  <div class="timeline-item">
+    <div class="time-icon" style="background:#f0fdf4">🏖️</div>
+    <div class="timeline-body">
+      <div class="timeline-time">15:00–18:00 · אופציונלי</div>
+      <div class="timeline-title">Freedom Beach + Paradise Beach</div>
+      <div class="timeline-desc">במקום (או בנוסף) לאחה"צ במלון — Bolt/Grab לפאטונג (~35 דקות) ומשם longtail לשני החופים. כל חוף ~שעה. Freedom ציורי וטרופי, Paradise אחד היפים בתאילנד. לחזור בשעה 18:00 לערב.</div>
+      <div class="tip-box tip-green">💡 להגיע ל-Freedom קודם ואז ל-Paradise — 5 דקות ביניהם בסירה. לא להישאר אחרי 17:30 — הסירות האחרונות מפסיקות לפני חשכה.</div>
+      <div class="link-row">
+        <a href="https://maps.google.com/?q=Freedom+Beach+Patong+Phuket" class="link-btn link-maps">📍 Freedom Beach</a>
+        <a href="https://maps.google.com/?q=Paradise+Beach+Phuket" class="link-btn link-maps">📍 Paradise Beach</a>
       </div>
     </div>
   </div>
 
-```
-<div id="tab-3-optional" class="tab-panel">
-  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
-
-  <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
-        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
+  <div class="timeline-item">
+    <div class="time-icon" style="background:#e8faf0">🍜</div>
+    <div class="timeline-body">
+      <div class="timeline-time">19:00–21:00</div>
+      <div class="timeline-title">ארוחת ערב · Bampot Kitchen & Bar</div>
+      <div class="timeline-desc">מסעדה מומלצת באזור Laguna — אוכל תאילנדי-אסייתי ברמה גבוהה, אווירה נעימה, מרחק קצר מהמלון.</div>
+      <div class="link-row">
+        <a href="https://maps.google.com/?q=Bampot+Kitchen+Bar+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a>
       </div>
-      <span class="badge badge-warn">30 דקות</span>
     </div>
-    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+  </div>
+</div>
+<div id="tab-3-food" class="tab-panel">
+  <div class="section-label">אוכל היום</div>
+  <div class="food-grid">
+    <div class="food-card"><div class="food-meal">בוקר</div><div class="food-name">SAii Laguna</div><div class="food-loc">כלול · בלי מהירות</div></div>
+    <div class="food-card"><div class="food-meal">צהריים</div><div class="food-name">המלון / הבריכה</div><div class="food-loc">סנאק או ארוחה קלה</div></div>
+  </div>
+  <div class="card">
+    <div class="food-meal">ערב</div>
+    <div class="card-title" style="margin-top:4px">Bampot Kitchen & Bar</div>
+    <div class="card-sub">אזור Laguna · ~10 דקות מהמלון</div>
+    <div class="card-body" style="margin-top:6px">מסעדה אסייתית עם תפריט מגוון — מנות תאילנדיות, אסייתיות, ים. אווירה נעימה ולא יקרה מדי. מתאים לקבוצה גדולה.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Bampot+Kitchen+Bar+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+</div>
+<div id="tab-3-logistics" class="tab-panel">
+  <div class="section-label">המלון</div>
+  <div class="card">
+    <div class="card-title">SAii Laguna Phuket</div>
+    <div class="card-body">לילה 3 מתוך 5 · 5/7 → 10/7 · Bangtao Beach</div>
+    <div class="link-row">
+      <button onclick="openModal('saii')" class="link-btn link-voucher">📋 פרטי הזמנה</button>
+      <a href="https://www.saiiphuketlaguna.com" target="_blank" class="link-btn link-web">🌐 אתר</a>
+      <a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a>
+    </div>
+  </div>
+</div>
+<div id="tab-3-tomorrow" class="tab-panel">
+  <div class="section-label">מחר — רביעי 8 יולי</div>
+  <div class="card">
+    <div class="card-title">🛍️ יום קניות · Porto de Phuket + Central Phuket</div>
+    <div class="card-body">בוקר ב-Porto de Phuket (5 דקות מהמלון), צהריים ב-Boat Avenue, אחה"צ ב-Central Phuket Festival (הקניון הגדול). ערב — Boat Avenue שוב.</div>
+    <div class="link-row">
+      <a href="https://maps.google.com/?q=Porto+de+Phuket+Laguna" class="link-btn link-maps">📍 Porto Maps</a>
+      <a href="https://maps.google.com/?q=Central+Phuket+Festival" class="link-btn link-maps">📍 Central Maps</a>
+    </div>
+  </div>
+  <div class="section-label">להכין הלילה</div>
+  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להביא תיקים / מזוודה ריקה לקניות</span></div>
+  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>כסף מזומן / כרטיס אשראי בכיס</span></div>
+  <div class="check-item" onclick="toggle(this)"><div class="check-box"></div><span>להזמין Bolt/Grab ל-Central Phuket אחה"צ</span></div>
+</div>
+<div id="tab-3-711" class="tab-panel">
+  <div class="section-label">7-Eleven קרוב למלון</div>
+  <div class="seven-item">
+    <div class="seven-info"><div class="seven-name">7-Eleven · Laguna entrance</div><div class="seven-addr">Choeng Thale — הכי קרוב לכניסת לגונה</div><div class="seven-rating">⭐ 3.6 · פתוח 24 שעות · ATM</div></div>
+    <a href="https://maps.google.com/?q=7-Eleven+Laguna+Phuket+Choeng+Thale" class="seven-link">📍 נווט</a>
+  </div>
+  <div class="seven-item">
+    <div class="seven-info"><div class="seven-name">7-Eleven · Bangtao (חדש)</div><div class="seven-addr">Choeng Thale — ליד Sunwing Hotel</div><div class="seven-rating">⭐ 5.0 · פתוח 24 שעות</div></div>
+    <a href="https://maps.google.com/?q=7-Eleven+Bangtao+Beach+Sunwing+Phuket" class="seven-link">📍 נווט</a>
+  </div>
+</div>
+
+
+
+<div id="tab-3-optional" class="tab-panel">
+  <div class="section-label">🐠 שנורקלינג מומלץ מפוקט</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Koh Waeo · הכי קרוב</div><div class="card-sub">longtail קצר מחוף Bangtao</div></div><span class="badge badge-warn">30 דקות</span></div>
+    <div class="card-body" style="margin-top:6px">אי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם ספונטני.</div>
     <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
-        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">חצי יום</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
-    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Coral Island · קלאסי למשפחות</div><div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים צבעוניות. לחוף האחורי (back side) — פחות עמוס ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות מ-Bangtao ל-Chalong Pier</div>
     <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
-        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">יום שלם</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
-    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Racha Yai Island · הכי יפה</div><div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">יום שלם</span></div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר ליד פוקט — מים שקופים, שוניות עשירות. אפשר לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ להזמין דרך GetYourGuide עם איסוף מהמלון — כולל ציוד וארוחת צהריים</div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
-        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
-      </div>
-      <span class="badge badge-warn">חצי-יום מלא</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
-    <div class="pill-row">
-      <span class="pill">מתאים לכל הגילאים</span>
-      <span class="pill">ציוד כלול בדרך כלל</span>
-      <span class="pill">~1,200-1,800 באט לאיש</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Khai Islands · מושלם לקבוצה גדולה</div><div class="card-sub">~30 דקות ספידבוט · איסוף מ-Bangtao</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים, מים שקטים, שוניות רדודות — מושלם לילדים ומשפחות. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row"><span class="pill">מתאים לכל הגילאים</span><span class="pill">ציוד כלול</span><span class="pill">~1,200-1,800 באט לאיש</span></div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
-  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px;margin-bottom:16px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="section-label">🏖️ חופים מומלצים בסביבה</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Freedom Beach · חוף טרופי בתולי</div><div class="card-sub">~35 דקות מ-Bangtao · דרום פוקט</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">חוף ציורי, טרופי ושקט עם צמחייה עשירה. מים ירוקים צלולים, חול לבן. מסעדה בחוף. אפשר לשלב עם Paradise Beach באותו יום.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 להגיע בבוקר לפני שמגיעות סירות מבקרים. 5 דקות ברכב מ-Patong.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Freedom+Beach+Patong+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Paradise Beach · אחד היפים בתאילנד</div><div class="card-sub">~35 דקות מ-Bangtao · 8 ק"מ מפאטונג</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">אחד החופים האקזוטיים ביותר בתאילנד — חול לבן, מים צלולים, הרים ירוקים מסביב. הרבה פחות תיירים מפאטונג. מסעדה בחוף.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ לשלב עם Freedom Beach — שניהם ביום אחד. Bolt/Grab ל-Patong ומשם longtail לחופים.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Paradise+Beach+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card" style="background:#e8f0fe;border-color:#c5d5f8">
+    <div style="font-size:12px;font-weight:600;color:#1a4fa0;margin-bottom:6px">📅 מתי הכי נכון לשלב?</div>
+    <div style="font-size:12px;color:#1a4fa0;line-height:1.7"><strong>יום 3 (שלישי)</strong> — אחה"צ אחרי ג'ט סקי ועיסוי<br><strong>יום 4 (רביעי)</strong> — בבוקר לפני קניות<br><strong>יום 5 (חמישי)</strong> — פחות מומלץ · יש ספידבוט ב-13:00</div>
+  </div>
+</div>
+<div id="tab-3-massage" class="tab-panel">
+  <div class="card" style="background:#fdf4ff;border-color:#e9d5ff">
+    <div style="font-size:12px;font-weight:600;color:#7e22ce;margin-bottom:4px">💡 טיפ כללי</div>
+    <div style="font-size:12px;color:#6b21a8;line-height:1.6">מסאז' בתאילנד = 300–600 באט לשעה (~30–60 ₪). תמיד לשריין מראש, במיוחד לשני אנשים ביחד.</div>
+  </div>
+  <div class="section-label">במלון · הכי נוח ומפנק</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">SAii Spa · במלון עצמו</div><div class="card-sub">⭐ 5.0 (162 ביקורות) · 10:00–22:00</div></div><span class="badge" style="background:#fdf4ff;color:#7e22ce">פרימיום</span></div>
+    <div class="card-body" style="margin-top:6px">"מעל לציפיות — חוויה מושלמת מהרגע הראשון." ספא יוקרתי בתוך המלון, אווירה מדהימה. לשריין בצ'ק-אין.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=SAii+Spa+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a></div>
+  </div>
+  <div class="section-label">מקומיים מומלצים · 5–10 דקות מהמלון</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Sabai Massage</div><div class="card-sub">⭐ 4.7 (245 ביקורות) · 10:00–23:00</div></div><span class="badge badge-warn">מומלץ ביותר</span></div>
+    <div class="card-body" style="margin-top:6px">"אחד המסאז'ים הטובים ביותר שחוויתי בחיי." לבקש Milli, Joy או Patty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Sport massage</span><span class="pill">Deep tissue</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Sabai+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66950917847" class="link-btn link-phone">📞 +66 95 091 7847</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Carnation</div><div class="card-sub">⭐ 4.4 (160 ביקורות) · 11:00–22:00</div></div><span class="badge badge-warn">הכי קרוב</span></div>
+    <div class="card-body" style="margin-top:6px">"הייתי כאן 10 שנים ברציפות — המקום הטוב ביותר." ממש ליד Laguna Rd. יש shuttle חינמי. ~600 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Oil massage</span><span class="pill">Shuttle חינמי</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Carnation+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676325565" class="link-btn link-phone">📞 076 325 565</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Tookta Massage Bangtao</div><div class="card-sub">⭐ 4.5 · 09:00–23:00</div></div><span class="badge badge-warn">ליד 7-Eleven</span></div>
+    <div class="card-body" style="margin-top:6px">"המסאז' הטוב ביותר בפוקט." קרוב ל-7-Eleven של Bangtao. גם מניקור/פדיקור. לבקש Kitty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Foot massage</span><span class="pill">Manicure/Pedicure</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Tookta+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66636350340" class="link-btn link-phone">📞 +66 63 635 0340</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Pam Relax Massage</div><div class="card-sub">⭐ 4.5 (163 ביקורות) · 09:30–23:00</div></div><span class="badge badge-warn">ספורטיבי</span></div>
+    <div class="card-body" style="margin-top:6px">"300-500 באט ואלו המסאז'ים הטובים שחוויתי בחיי." מתמחים ב-sports massage ו-deep tissue. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Sports massage</span><span class="pill">Deep tissue</span><span class="pill">Foot massage</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pam+Relax+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66813898436" class="link-btn link-phone">📞 +66 81 389 8436</a></div>
+  </div>
+  <div class="tip-box tip-blue" style="margin-top:4px">💡 לשריין יום קודם — במיוחד אם רוצים שני אנשים ביחד. לציין עוצמה: light / medium / strong.</div>
 </div>
 ```
 
+  </div>
 </div>
-
-<!-- ======= יום 4 ======= -->
 
 <div id="day-4" class="day-page">
   <div class="header">
@@ -954,6 +1022,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('4-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('4-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('4-optional',this)">💡 אופציונלי</button>
+    <button class="tab" onclick="showTab('4-massage',this)">💆 מסאז'</button>
   </div>
   <div class="content">
     <div id="tab-4-schedule" class="tab-panel active">
@@ -1082,78 +1151,94 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
         <a href="https://maps.google.com/?q=7-Eleven+Bangtao+Beach+Sunwing+Phuket" class="seven-link">📍 נווט</a>
       </div>
     </div>
-  </div>
 
 ```
 <div id="tab-4-optional" class="tab-panel">
-  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
-
+  <div class="section-label">🐠 שנורקלינג מומלץ מפוקט</div>
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
-        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
-      </div>
-      <span class="badge badge-warn">30 דקות</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Koh Waeo · הכי קרוב</div><div class="card-sub">longtail קצר מחוף Bangtao</div></div><span class="badge badge-warn">30 דקות</span></div>
+    <div class="card-body" style="margin-top:6px">אי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם ספונטני.</div>
     <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
-        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">חצי יום</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
-    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Coral Island · קלאסי למשפחות</div><div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים צבעוניות. לחוף האחורי (back side) — פחות עמוס ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות מ-Bangtao ל-Chalong Pier</div>
     <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
-        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">יום שלם</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
-    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Racha Yai Island · הכי יפה</div><div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">יום שלם</span></div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר ליד פוקט — מים שקופים, שוניות עשירות. אפשר לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ להזמין דרך GetYourGuide עם איסוף מהמלון — כולל ציוד וארוחת צהריים</div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
-        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
-      </div>
-      <span class="badge badge-warn">חצי-יום מלא</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
-    <div class="pill-row">
-      <span class="pill">מתאים לכל הגילאים</span>
-      <span class="pill">ציוד כלול בדרך כלל</span>
-      <span class="pill">~1,200-1,800 באט לאיש</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Khai Islands · מושלם לקבוצה גדולה</div><div class="card-sub">~30 דקות ספידבוט · איסוף מ-Bangtao</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים, מים שקטים, שוניות רדודות — מושלם לילדים ומשפחות. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row"><span class="pill">מתאים לכל הגילאים</span><span class="pill">ציוד כלול</span><span class="pill">~1,200-1,800 באט לאיש</span></div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
-  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px;margin-bottom:16px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="section-label">🏖️ חופים מומלצים בסביבה</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Freedom Beach · חוף טרופי בתולי</div><div class="card-sub">~35 דקות מ-Bangtao · דרום פוקט</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">חוף ציורי, טרופי ושקט עם צמחייה עשירה. מים ירוקים צלולים, חול לבן. מסעדה בחוף. אפשר לשלב עם Paradise Beach באותו יום.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 להגיע בבוקר לפני שמגיעות סירות מבקרים. 5 דקות ברכב מ-Patong.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Freedom+Beach+Patong+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Paradise Beach · אחד היפים בתאילנד</div><div class="card-sub">~35 דקות מ-Bangtao · 8 ק"מ מפאטונג</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">אחד החופים האקזוטיים ביותר בתאילנד — חול לבן, מים צלולים, הרים ירוקים מסביב. הרבה פחות תיירים מפאטונג. מסעדה בחוף.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ לשלב עם Freedom Beach — שניהם ביום אחד. Bolt/Grab ל-Patong ומשם longtail לחופים.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Paradise+Beach+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card" style="background:#e8f0fe;border-color:#c5d5f8">
+    <div style="font-size:12px;font-weight:600;color:#1a4fa0;margin-bottom:6px">📅 מתי הכי נכון לשלב?</div>
+    <div style="font-size:12px;color:#1a4fa0;line-height:1.7"><strong>יום 3 (שלישי)</strong> — אחה"צ אחרי ג'ט סקי ועיסוי<br><strong>יום 4 (רביעי)</strong> — בבוקר לפני קניות<br><strong>יום 5 (חמישי)</strong> — פחות מומלץ · יש ספידבוט ב-13:00</div>
+  </div>
+</div>
+<div id="tab-4-massage" class="tab-panel">
+  <div class="card" style="background:#fdf4ff;border-color:#e9d5ff">
+    <div style="font-size:12px;font-weight:600;color:#7e22ce;margin-bottom:4px">💡 טיפ כללי</div>
+    <div style="font-size:12px;color:#6b21a8;line-height:1.6">מסאז' בתאילנד = 300–600 באט לשעה (~30–60 ₪). תמיד לשריין מראש, במיוחד לשני אנשים ביחד.</div>
+  </div>
+  <div class="section-label">במלון · הכי נוח ומפנק</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">SAii Spa · במלון עצמו</div><div class="card-sub">⭐ 5.0 (162 ביקורות) · 10:00–22:00</div></div><span class="badge" style="background:#fdf4ff;color:#7e22ce">פרימיום</span></div>
+    <div class="card-body" style="margin-top:6px">"מעל לציפיות — חוויה מושלמת מהרגע הראשון." ספא יוקרתי בתוך המלון, אווירה מדהימה. לשריין בצ'ק-אין.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=SAii+Spa+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a></div>
+  </div>
+  <div class="section-label">מקומיים מומלצים · 5–10 דקות מהמלון</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Sabai Massage</div><div class="card-sub">⭐ 4.7 (245 ביקורות) · 10:00–23:00</div></div><span class="badge badge-warn">מומלץ ביותר</span></div>
+    <div class="card-body" style="margin-top:6px">"אחד המסאז'ים הטובים ביותר שחוויתי בחיי." לבקש Milli, Joy או Patty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Sport massage</span><span class="pill">Deep tissue</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Sabai+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66950917847" class="link-btn link-phone">📞 +66 95 091 7847</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Carnation</div><div class="card-sub">⭐ 4.4 (160 ביקורות) · 11:00–22:00</div></div><span class="badge badge-warn">הכי קרוב</span></div>
+    <div class="card-body" style="margin-top:6px">"הייתי כאן 10 שנים ברציפות — המקום הטוב ביותר." ממש ליד Laguna Rd. יש shuttle חינמי. ~600 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Oil massage</span><span class="pill">Shuttle חינמי</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Carnation+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676325565" class="link-btn link-phone">📞 076 325 565</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Tookta Massage Bangtao</div><div class="card-sub">⭐ 4.5 · 09:00–23:00</div></div><span class="badge badge-warn">ליד 7-Eleven</span></div>
+    <div class="card-body" style="margin-top:6px">"המסאז' הטוב ביותר בפוקט." קרוב ל-7-Eleven של Bangtao. גם מניקור/פדיקור. לבקש Kitty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Foot massage</span><span class="pill">Manicure/Pedicure</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Tookta+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66636350340" class="link-btn link-phone">📞 +66 63 635 0340</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Pam Relax Massage</div><div class="card-sub">⭐ 4.5 (163 ביקורות) · 09:30–23:00</div></div><span class="badge badge-warn">ספורטיבי</span></div>
+    <div class="card-body" style="margin-top:6px">"300-500 באט ואלו המסאז'ים הטובים שחוויתי בחיי." מתמחים ב-sports massage ו-deep tissue. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Sports massage</span><span class="pill">Deep tissue</span><span class="pill">Foot massage</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pam+Relax+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66813898436" class="link-btn link-phone">📞 +66 81 389 8436</a></div>
+  </div>
+  <div class="tip-box tip-blue" style="margin-top:4px">💡 לשריין יום קודם — במיוחד אם רוצים שני אנשים ביחד. לציין עוצמה: light / medium / strong.</div>
 </div>
 ```
 
+  </div>
 </div>
-
-<!-- ======= יום 5 ======= -->
 
 <div id="day-5" class="day-page">
   <div class="header">
@@ -1172,6 +1257,7 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
     <button class="tab" onclick="showTab('5-tomorrow',this)">מחר</button>
     <button class="tab" onclick="showTab('5-711',this)">🏪 7-Eleven</button>
     <button class="tab" onclick="showTab('5-optional',this)">💡 אופציונלי</button>
+    <button class="tab" onclick="showTab('5-massage',this)">💆 מסאז'</button>
   </div>
   <div class="content">
     <div id="tab-5-schedule" class="tab-panel active">
@@ -1310,75 +1396,93 @@ overflow-x: auto; -webkit-overflow-scrolling: touch;
       </div>
       <div class="tip-box tip-warn" style="margin-top:12px">⚠️ ב-Koh Yao Yai יש רק 7-Eleven אחד עם מבחר מוגבל. לקנות מה שצריך לפני עלייה לספידבוט — מים, חטיפים, קרם הגנה.</div>
     </div>
-  </div>
 
 ```
 <div id="tab-5-optional" class="tab-panel">
-  <div class="section-label">שנורקלינג מומלץ מפוקט</div>
-
+  <div class="section-label">🐠 שנורקלינג מומלץ מפוקט</div>
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🐠 Koh Waeo · הכי קרוב</div>
-        <div class="card-sub">longtail boat קצר מחוף Bangtao</div>
-      </div>
-      <span class="badge badge-warn">30 דקות</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">איי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם אם רוצים ספונטני בלי לוז.</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Koh Waeo · הכי קרוב</div><div class="card-sub">longtail קצר מחוף Bangtao</div></div><span class="badge badge-warn">30 דקות</span></div>
+    <div class="card-body" style="margin-top:6px">אי סלע קטן ממש מול Bangtao — שנורקלינג קל, מים צלולים, חיי ים טובים. הכי קל לוגיסטית — longtail מהחוף. מושלם ספונטני.</div>
     <div class="tip-box tip-blue" style="margin-top:6px">💡 לבקש longtail ב-Laguna Beach Sports Centre — ~500-800 באט לסירה</div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏝️ Coral Island (Koh He) · קלאסי למשפחות</div>
-        <div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">חצי יום</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים עם דגים צבעוניים. לחוף הצדדי (back side) — פחות אנשים ואלמוגים עשירים יותר.</div>
-    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות נסיעה מ-Bangtao ל-Chalong Pier</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Coral Island · קלאסי למשפחות</div><div class="card-sub">15 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">מים רדודים ושקטים — מושלם למתחילים וילדים. שוניות אלמוגים צבעוניות. לחוף האחורי (back side) — פחות עמוס ואלמוגים עשירים יותר.</div>
+    <div class="tip-box tip-warn" style="margin-top:6px">⚠️ להגיע מוקדם — מתמלא בצהריים. ~40 דקות מ-Bangtao ל-Chalong Pier</div>
     <div class="link-row"><a href="https://maps.google.com/?q=Chalong+Pier+Phuket" class="link-btn link-maps">📍 Chalong Pier</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🌊 Racha Yai Island · הכי יפה</div>
-        <div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div>
-      </div>
-      <span class="badge badge-warn">יום שלם</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">הטוב ביותר לשנורקלינג ליד פוקט — מים שקופים, שוניות עשירות, ים פתוח. מתאים למתחילים ומנוסים. ניתן לשנרקל ישירות מהחוף בצד המזרחי.</div>
-    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ להזמין דרך GetYourGuide/Viator עם איסוף מהמלון — כולל ציוד + ארוחת צהריים</div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Racha Yai Island · הכי יפה</div><div class="card-sub">~45 דקות ספידבוט מ-Chalong Pier</div></div><span class="badge badge-warn">יום שלם</span></div>
+    <div class="card-body" style="margin-top:6px">הטוב ביותר ליד פוקט — מים שקופים, שוניות עשירות. אפשר לשנרקל ישירות מהחוף בצד המזרחי.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ להזמין דרך GetYourGuide עם איסוף מהמלון — כולל ציוד וארוחת צהריים</div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
   <div class="card">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-      <div>
-        <div class="card-title">🏖️ Khai Islands · מושלם לקבוצה גדולה</div>
-        <div class="card-sub">~30 דקות ספידבוט · עם איסוף מ-Bangtao</div>
-      </div>
-      <span class="badge badge-warn">חצי-יום מלא</span>
-    </div>
-    <div class="card-body" style="margin-top:6px">שלושה איים קטנים עם מים שקטים ושוניות רדודות — מושלם לילדים ומשפחות. אטמוספרה כיפית, חוף לבן. יש איסוף מ-Bangtao/Laguna.</div>
-    <div class="pill-row">
-      <span class="pill">מתאים לכל הגילאים</span>
-      <span class="pill">ציוד כלול בדרך כלל</span>
-      <span class="pill">~1,200-1,800 באט לאיש</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a>
-    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Khai Islands · מושלם לקבוצה גדולה</div><div class="card-sub">~30 דקות ספידבוט · איסוף מ-Bangtao</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">שלושה איים קטנים, מים שקטים, שוניות רדודות — מושלם לילדים ומשפחות. יש איסוף מ-Bangtao/Laguna.</div>
+    <div class="pill-row"><span class="pill">מתאים לכל הגילאים</span><span class="pill">ציוד כלול</span><span class="pill">~1,200-1,800 באט לאיש</span></div>
+    <div class="link-row"><a href="https://www.getyourguide.com/phuket-l32123/snorkeling-tc36/" target="_blank" class="link-btn link-web">🌐 GetYourGuide</a></div>
   </div>
-
-  <div class="tip-box tip-warn" style="margin-top:4px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Racha Yai פחות מתאים כשהים גלי. Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="tip-box tip-warn" style="margin-top:4px;margin-bottom:16px">⚠️ יולי = עונת גשמים. לבדוק תחזית ים לפני הזמנה — Coral Island ו-Khai Islands מוגנים יותר מגלים.</div>
+  <div class="section-label">🏖️ חופים מומלצים בסביבה</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Freedom Beach · חוף טרופי בתולי</div><div class="card-sub">~35 דקות מ-Bangtao · דרום פוקט</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">חוף ציורי, טרופי ושקט עם צמחייה עשירה. מים ירוקים צלולים, חול לבן. מסעדה בחוף. אפשר לשלב עם Paradise Beach באותו יום.</div>
+    <div class="tip-box tip-blue" style="margin-top:6px">💡 להגיע בבוקר לפני שמגיעות סירות מבקרים. 5 דקות ברכב מ-Patong.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Freedom+Beach+Patong+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Paradise Beach · אחד היפים בתאילנד</div><div class="card-sub">~35 דקות מ-Bangtao · 8 ק"מ מפאטונג</div></div><span class="badge badge-warn">חצי יום</span></div>
+    <div class="card-body" style="margin-top:6px">אחד החופים האקזוטיים ביותר בתאילנד — חול לבן, מים צלולים, הרים ירוקים מסביב. הרבה פחות תיירים מפאטונג. מסעדה בחוף.</div>
+    <div class="tip-box tip-green" style="margin-top:6px">⭐ מומלץ לשלב עם Freedom Beach — שניהם ביום אחד. Bolt/Grab ל-Patong ומשם longtail לחופים.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Paradise+Beach+Phuket" class="link-btn link-maps">📍 Maps</a></div>
+  </div>
+  <div class="card" style="background:#e8f0fe;border-color:#c5d5f8">
+    <div style="font-size:12px;font-weight:600;color:#1a4fa0;margin-bottom:6px">📅 מתי הכי נכון לשלב?</div>
+    <div style="font-size:12px;color:#1a4fa0;line-height:1.7"><strong>יום 3 (שלישי)</strong> — אחה"צ אחרי ג'ט סקי ועיסוי<br><strong>יום 4 (רביעי)</strong> — בבוקר לפני קניות<br><strong>יום 5 (חמישי)</strong> — פחות מומלץ · יש ספידבוט ב-13:00</div>
+  </div>
+</div>
+<div id="tab-5-massage" class="tab-panel">
+  <div class="card" style="background:#fdf4ff;border-color:#e9d5ff">
+    <div style="font-size:12px;font-weight:600;color:#7e22ce;margin-bottom:4px">💡 טיפ כללי</div>
+    <div style="font-size:12px;color:#6b21a8;line-height:1.6">מסאז' בתאילנד = 300–600 באט לשעה (~30–60 ₪). תמיד לשריין מראש, במיוחד לשני אנשים ביחד.</div>
+  </div>
+  <div class="section-label">במלון · הכי נוח ומפנק</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">SAii Spa · במלון עצמו</div><div class="card-sub">⭐ 5.0 (162 ביקורות) · 10:00–22:00</div></div><span class="badge" style="background:#fdf4ff;color:#7e22ce">פרימיום</span></div>
+    <div class="card-body" style="margin-top:6px">"מעל לציפיות — חוויה מושלמת מהרגע הראשון." ספא יוקרתי בתוך המלון, אווירה מדהימה. לשריין בצ'ק-אין.</div>
+    <div class="link-row"><a href="https://maps.google.com/?q=SAii+Spa+Laguna+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676360600" class="link-btn link-phone">📞 076 360 600</a></div>
+  </div>
+  <div class="section-label">מקומיים מומלצים · 5–10 דקות מהמלון</div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Sabai Massage</div><div class="card-sub">⭐ 4.7 (245 ביקורות) · 10:00–23:00</div></div><span class="badge badge-warn">מומלץ ביותר</span></div>
+    <div class="card-body" style="margin-top:6px">"אחד המסאז'ים הטובים ביותר שחוויתי בחיי." לבקש Milli, Joy או Patty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Sport massage</span><span class="pill">Deep tissue</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Sabai+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66950917847" class="link-btn link-phone">📞 +66 95 091 7847</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Thai Carnation</div><div class="card-sub">⭐ 4.4 (160 ביקורות) · 11:00–22:00</div></div><span class="badge badge-warn">הכי קרוב</span></div>
+    <div class="card-body" style="margin-top:6px">"הייתי כאן 10 שנים ברציפות — המקום הטוב ביותר." ממש ליד Laguna Rd. יש shuttle חינמי. ~600 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Oil massage</span><span class="pill">Shuttle חינמי</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Thai+Carnation+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+6676325565" class="link-btn link-phone">📞 076 325 565</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Tookta Massage Bangtao</div><div class="card-sub">⭐ 4.5 · 09:00–23:00</div></div><span class="badge badge-warn">ליד 7-Eleven</span></div>
+    <div class="card-body" style="margin-top:6px">"המסאז' הטוב ביותר בפוקט." קרוב ל-7-Eleven של Bangtao. גם מניקור/פדיקור. לבקש Kitty. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Thai massage</span><span class="pill">Foot massage</span><span class="pill">Manicure/Pedicure</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Tookta+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66636350340" class="link-btn link-phone">📞 +66 63 635 0340</a></div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div class="card-title">Pam Relax Massage</div><div class="card-sub">⭐ 4.5 (163 ביקורות) · 09:30–23:00</div></div><span class="badge badge-warn">ספורטיבי</span></div>
+    <div class="card-body" style="margin-top:6px">"300-500 באט ואלו המסאז'ים הטובים שחוויתי בחיי." מתמחים ב-sports massage ו-deep tissue. ~400 באט לשעה.</div>
+    <div class="pill-row"><span class="pill">Sports massage</span><span class="pill">Deep tissue</span><span class="pill">Foot massage</span></div>
+    <div class="link-row"><a href="https://maps.google.com/?q=Pam+Relax+Massage+Bangtao+Phuket" class="link-btn link-maps">📍 Maps</a><a href="tel:+66813898436" class="link-btn link-phone">📞 +66 81 389 8436</a></div>
+  </div>
+  <div class="tip-box tip-blue" style="margin-top:4px">💡 לשריין יום קודם — במיוחד אם רוצים שני אנשים ביחד. לציין עוצמה: light / medium / strong.</div>
 </div>
 ```
 
+  </div>
 </div>
 
 <script>
